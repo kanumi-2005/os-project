@@ -101,6 +101,7 @@ extern uint64 sys_unlink(void);
 extern uint64 sys_link(void);
 extern uint64 sys_mkdir(void);
 extern uint64 sys_close(void);
+extern uint64 sys_trace(void);
 
 // An array mapping syscall numbers from syscall.h
 // to the function that handles the system call.
@@ -126,7 +127,195 @@ static uint64 (*syscalls[])(void) = {
 [SYS_link]    sys_link,
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
+[SYS_trace]   sys_trace,
 };
+
+static char *syscall_names[] = {
+  [SYS_fork]    "fork",
+  [SYS_exit]    "exit",
+  [SYS_wait]    "wait",
+  [SYS_pipe]    "pipe",
+  [SYS_read]    "read",
+  [SYS_kill]    "kill",
+  [SYS_exec]    "exec",
+  [SYS_fstat]   "fstat",
+  [SYS_chdir]   "chdir",
+  [SYS_dup]     "dup",
+  [SYS_getpid]  "getpid",
+  [SYS_sbrk]    "sbrk",
+  [SYS_sleep]   "sleep",
+  [SYS_uptime]  "uptime",
+  [SYS_open]    "open",
+  [SYS_write]   "write",
+  [SYS_mknod]   "mknod",
+  [SYS_unlink]  "unlink",
+  [SYS_link]    "link",
+  [SYS_mkdir]   "mkdir",
+  [SYS_close]   "close",
+  [SYS_trace]   "trace",
+};
+
+#ifdef TRACE_ARG
+enum argtype {
+  ARG_INT,
+  ARG_PTR,
+  ARG_STR,
+  ARG_ARGV,   // for exec
+};
+
+struct syscall_argdesc {
+  int nargs;
+  enum argtype types[4];
+};
+
+static struct syscall_argdesc syscall_args[] = {
+  [SYS_fork] = {
+    .nargs = 0,
+  },
+  [SYS_exit] = {
+    .nargs = 1,
+    .types = { ARG_INT },
+  },
+  [SYS_wait] = {
+    .nargs = 1,
+    .types = { ARG_PTR },
+  },
+  [SYS_pipe] = {
+    .nargs = 1,
+    .types = { ARG_PTR },
+  },
+  [SYS_read] = {
+    .nargs = 3,
+    .types = { ARG_INT, ARG_PTR, ARG_INT },
+  },
+  [SYS_kill] = {
+    .nargs = 1,
+    .types = { ARG_INT },
+  },
+  [SYS_exec] = {
+    .nargs = 2,
+    .types = { ARG_STR, ARG_ARGV },   // ⭐ exec đặc biệt
+  },
+  [SYS_fstat] = {
+    .nargs = 1,
+    .types = { ARG_PTR },
+  },
+  [SYS_chdir] = {
+    .nargs = 1,
+    .types = { ARG_STR },
+  },
+  [SYS_dup] = {
+    .nargs = 1,
+    .types = { ARG_INT },
+  },
+  [SYS_getpid] = {
+    .nargs = 0,
+  },
+  [SYS_sbrk] = {
+    .nargs = 1,
+    .types = { ARG_INT },
+  },
+  [SYS_sleep] = {
+    .nargs = 1,
+    .types = { ARG_INT },
+  },
+  [SYS_uptime] = {
+    .nargs = 0,
+  },
+  [SYS_open] = {
+    .nargs = 2,
+    .types = { ARG_STR, ARG_INT },
+  },
+  [SYS_write] = {
+    .nargs = 3,
+    .types = { ARG_INT, ARG_STR, ARG_INT },
+  },
+  [SYS_mknod] = {
+    .nargs = 3,
+    .types = { ARG_STR, ARG_INT, ARG_INT },
+  },
+  [SYS_unlink] = {
+    .nargs = 1,
+    .types = { ARG_STR },
+  },
+  [SYS_link] = {
+    .nargs = 2,
+    .types = { ARG_STR, ARG_STR },
+  },
+  [SYS_mkdir] = {
+    .nargs = 1,
+    .types = { ARG_STR },
+  },
+  [SYS_close] = {
+    .nargs = 1,
+    .types = { ARG_INT },
+  },
+  [SYS_trace] = {
+    .nargs = 1,
+    .types = { ARG_INT },
+  },
+};
+
+static void
+trace_syscall_args(struct proc *p, int num, uint64 *args)
+{
+  printf("(");
+
+  struct syscall_argdesc *desc = &syscall_args[num];
+
+  for (int i = 0; i < desc->nargs; i++) {
+    uint64 a = args[i];
+
+    switch (desc->types[i]) {
+
+    case ARG_INT:
+      printf("%d", (int)a);
+      break;
+
+    case ARG_PTR:
+      printf("%p", (void*)a);
+      break;
+
+    case ARG_STR: {
+      char buf[64];
+      if (fetchstr(a, buf, sizeof(buf)) >= 0)
+        printf("\"%s\"", buf);
+      else
+        printf("%p", (void*)a);
+      break;
+    }
+
+    case ARG_ARGV: {
+      uint64 uarg;
+      char buf[64];
+
+      printf("[");
+      for (int j = 0; j < MAXARG; j++) {
+        if (fetchaddr(a + j * sizeof(uint64), &uarg) < 0)
+          break;
+        if (uarg == 0)
+          break;
+
+        if (j > 0)
+          printf(", ");
+
+        if (fetchstr(uarg, buf, sizeof(buf)) >= 0)
+          printf("\"%s\"", buf);
+        else
+          printf("%p", (void*)uarg);
+      }
+      printf("]");
+      break;
+    }
+    }
+
+    if (i + 1 < desc->nargs)
+      printf(", ");
+  }
+
+  printf(")");
+}
+#endif
 
 void
 syscall(void)
@@ -136,12 +325,50 @@ syscall(void)
 
   num = p->trapframe->a7;
   if(num > 0 && num < NELEM(syscalls) && syscalls[num]) {
+#ifdef TRACE_ARG
+    uint64 args[4];
+    for (int i = 0; i < 4; i++)
+      args[i] = argraw(i);
+#endif
+
+    int is_exec = (num == SYS_exec);
+
+    // exec is handled specially because it replaces the process address space,
+    // so its arguments must be fetched before invoking the system call.
+    if (is_exec && (p->tracemask & (1 << num))) {
+      printf("%d: syscall %s",
+             p->pid,
+             syscall_names[num]);
+
+#ifdef TRACE_ARG
+      trace_syscall_args(p, num, args);
+#endif
+    }
+
     // Use num to lookup the system call function for num, call it,
     // and store its return value in p->trapframe->a0
-    p->trapframe->a0 = syscalls[num]();
+    int ret = syscalls[num]();
+    p->trapframe->a0 = ret;
+
+    if (p->tracemask & (1 << num)) {
+
+      if (!is_exec) {
+      printf("%d: syscall %s",
+             p->pid,
+             syscall_names[num]);
+
+#ifdef TRACE_ARG
+        trace_syscall_args(p, num, args);
+#endif
+      }
+
+      // trace return value
+      printf(" -> %d\n", ret);
+    }
+
   } else {
     printf("%d %s: unknown sys call %d\n",
-            p->pid, p->name, num);
+           p->pid, p->name, num);
     p->trapframe->a0 = -1;
   }
 }

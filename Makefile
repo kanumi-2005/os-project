@@ -117,6 +117,11 @@ ifneq ($(shell $(CC) -dumpspecs 2>/dev/null | grep -e '[^f]nopie'),)
 CFLAGS += -fno-pie -nopie
 endif
 
+# Enable trace syscall arguments
+ifdef TRACE_ARG
+CFLAGS += -DTRACE_ARG
+endif
+
 LDFLAGS = -z max-page-size=4096
 
 $K/kernel: $(OBJS) $(OBJS_KCSAN) $K/kernel.ld $U/initcode
@@ -188,7 +193,8 @@ UPROGS=\
 	$U/_grind\
 	$U/_wc\
 	$U/_zombie\
-
+	$U/_trace\
+	$U/_tracetest\
 
 
 
