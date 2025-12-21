@@ -1,0 +1,1632 @@
+Script started on 2025-12-21 15:50:43+07:00 [TERM="alacritty" TTY="/dev/pts/2" COLUMNS="128" LINES="28"]
+]0;PhuHoang@Kanumi:~/Projects/os/project-2/xv6-labs-2023[?2004h(ins)[PhuHoang@Kanumi xv6-labs-2023]$ tmux
+[?2004l[?1049h[22;0;0t[?1h=[H[2J[?12l[?25h[?1000l[?1002l[?1003l[?1006l[?1005l[?2004h[?2031h[?996n(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;28r[c[>c[>q]10;?\]11;?\[1;1H[?1006l[?1000l[?1002l[?1003l[?1006h[?1000h[?1002h[?25l[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:tmux*                                                                                             "Kanumi" 15:50 21-Dec-25(B[m[?12l[?25h[1;1H(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;28r[1;1H[?1006l[?1000l[?1002l[?1003l[?1006h[?1000h[?1002h[?25l[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:tmux*                                                                                             "Kanumi" 15:50 21-Dec-25(B[m[?12l[?25h[1;1H[?7727h(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;28r[?7727h(B[m[?12l[?25h[?1006l[?1000l[?1002l[?1003l[1;1H[1;28r[1;1H[?1006l[?1000l[?1002l[?1003l[?1006h[?1000h[?1002h[?25l[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:tmux*                                                                                             "Kanumi" 15:50 21-Dec-25(B[m[?12l[?25h[1;1H[?25l[30m[42m[28d[0] 0:tmux*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;1H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [?25l[30m[42m[28;1H[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[26C│[2;65H│[3;65H│[4;65H│[5;65H│[6;65H│[7;65H│[8;65H│[9;65H│[10;65H│[11;65H│[12;65H│[13;65H│[14;65H│[15;65H[32m│[16;65H│[17;65H│[18;65H│[19;65H│[20;65H│[21;65H│[22;65H│[23;65H│[24;65H│[25;65H│[26;65H│[27;65H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [26X[2;64H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;66H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                                             "Kanumi" 15:50 21-Dec-25(B[m[?12l[?25h[1;66H[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [26X[27C[?25l│[2;65H│[3;65H│[4;65H│[5;65H│[6;65H│[7;65H│[8;65H│[9;65H│[10;65H│[11;65H│[12;65H│[13;65H│[14;65H│[15;65H[32m│[16;65H│[17;65H│[18;65H│[19;65H│[20;65H│[21;65H│[22;65H│[23;65H│[24;65H│[25;65H│[26;65H│[27;65H│(B[m[30m[42m
+[0] 0:tmux*                                                                                             "Kanumi" 15:50 21-Dec-25(B[m[?12l[?25h[1;66H[?25l│[2;65H│[3;65H│[4;65H│[5;65H│[6;65H│[7;65H│[8;65H│[9;65H│[10;65H│[11;65H│[12;65H│[13;65H│[14;65H│[15;65H[32m│[16;65H│[17;65H│[18;65H│[19;65H│[20;65H│[21;65H│[22;65H│[23;65H│[24;65H│[25;65H│[26;65H│[27;65H│(B[m[30m[42m
+[0] 0:tmux*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;66H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [?25l[39D│[2;65H│[3;65H│[4;65H│[5;65H│[6;65H│[7;65H│[8;65H│[9;65H│[10;65H│[11;65H│[12;65H│[13;65H│[14;65H│[15;65H[32m│[16;65H│[17;65H│[18;65H│[19;65H│[20;65H│[21;65H│[22;65H│[23;65H│[24;65H│[25;65H│[26;65H│[27;65H│(B[m[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;104H[?25l[39D[32m│[2;65H│[3;65H│[4;65H│[5;65H│[6;65H│[7;65H│[8;65H│[9;65H│[10;65H│[11;65H│[12;65H│[13;65H│[14;65H│[15;65H[39m│[16;65H│[17;65H│[18;65H│[19;65H│[20;65H│[21;65H│[22;65H│[23;65H│[24;65H│[25;65H│[26;65H│[27;65H│(B[m[?12l[?25h[1;39H[?25l[25C[32m│[2;64H│[3;64H│[4;64H│[5;64H│[6;64H│[7;64H│[8;64H│[9;64H│[10;64H│[11;64H│[12;64H│[13;64H│[14;64H│[15;64H[39m│[16;64H│[17;64H│[18;64H│[19;64H│[20;64H│[21;64H│[22;64H│[23;64H│[24;64H│[25;64H│[26;64H│[27;64H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [25X[2;63H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;65H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;65H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[26C(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[39G[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [25X[?25l[24C[32m│[2;63H│[3;63H│[4;63H│[5;63H│[6;63H│[7;63H│[8;63H│[9;63H│[10;63H│[11;63H│[12;63H│[13;63H│[14;63H│[15;63H[39m│[16;63H│[17;63H│[18;63H│[19;63H│[20;63H│[21;63H│[22;63H│[23;63H│[24;63H│[25;63H│[26;63H│[27;63H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [24X[2;62H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;64H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;64H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[23C[32m│[2;62H│[3;62H│[4;62H│[5;62H│[6;62H│[7;62H│[8;62H│[9;62H│[10;62H│[11;62H│[12;62H│[13;62H│[14;62H│[15;62H[39m│[16;62H│[17;62H│[18;62H│[19;62H│[20;62H│[21;62H│[22;62H│[23;62H│[24;62H│[25;62H│[26;62H│[27;62H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [23X[2;61H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;63H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;63H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[22C[32m│[2;61H│[3;61H│[4;61H│[5;61H│[6;61H│[7;61H│[8;61H│[9;61H│[10;61H│[11;61H│[12;61H│[13;61H│[14;61H│[15;61H[39m│[16;61H│[17;61H│[18;61H│[19;61H│[20;61H│[21;61H│[22;61H│[23;61H│[24;61H│[25;61H│[26;61H│[27;61H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [22X[2;60H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;62H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;62H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[21C[32m│[2;60H│[3;60H│[4;60H│[5;60H│[6;60H│[7;60H│[8;60H│[9;60H│[10;60H│[11;60H│[12;60H│[13;60H│[14;60H│[15;60H[39m│[16;60H│[17;60H│[18;60H│[19;60H│[20;60H│[21;60H│[22;60H│[23;60H│[24;60H│[25;60H│[26;60H│[27;60H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [21X[2;59H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;61H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;61H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[20C[32m│[2;59H│[3;59H│[4;59H│[5;59H│[6;59H│[7;59H│[8;59H│[9;59H│[10;59H│[11;59H│[12;59H│[13;59H│[14;59H│[15;59H[39m│[16;59H│[17;59H│[18;59H│[19;59H│[20;59H│[21;59H│[22;59H│[23;59H│[24;59H│[25;59H│[26;59H│[27;59H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [20X[2;58H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;60H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;60H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[19C[32m│[2;58H│[3;58H│[4;58H│[5;58H│[6;58H│[7;58H│[8;58H│[9;58H│[10;58H│[11;58H│[12;58H│[13;58H│[14;58H│[15;58H[39m│[16;58H│[17;58H│[18;58H│[19;58H│[20;58H│[21;58H│[22;58H│[23;58H│[24;58H│[25;58H│[26;58H│[27;58H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [19X[2;57H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;59H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;59H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[18C[32m│[2;57H│[3;57H│[4;57H│[5;57H│[6;57H│[7;57H│[8;57H│[9;57H│[10;57H│[11;57H│[12;57H│[13;57H│[14;57H│[15;57H[39m│[16;57H│[17;57H│[18;57H│[19;57H│[20;57H│[21;57H│[22;57H│[23;57H│[24;57H│[25;57H│[26;57H│[27;57H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [18X[2;56H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;58H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;58H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[17C[32m│[2;56H│[3;56H│[4;56H│[5;56H│[6;56H│[7;56H│[8;56H│[9;56H│[10;56H│[11;56H│[12;56H│[13;56H│[14;56H│[15;56H[39m│[16;56H│[17;56H│[18;56H│[19;56H│[20;56H│[21;56H│[22;56H│[23;56H│[24;56H│[25;56H│[26;56H│[27;56H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [17X[2;55H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;57H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;57H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[16C[32m│[2;55H│[3;55H│[4;55H│[5;55H│[6;55H│[7;55H│[8;55H│[9;55H│[10;55H│[11;55H│[12;55H│[13;55H│[14;55H│[15;55H[39m│[16;55H│[17;55H│[18;55H│[19;55H│[20;55H│[21;55H│[22;55H│[23;55H│[24;55H│[25;55H│[26;55H│[27;55H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [16X[2;54H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;56H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;56H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[15C[32m│[2;54H│[3;54H│[4;54H│[5;54H│[6;54H│[7;54H│[8;54H│[9;54H│[10;54H│[11;54H│[12;54H│[13;54H│[14;54H│[15;54H[39m│[16;54H│[17;54H│[18;54H│[19;54H│[20;54H│[21;54H│[22;54H│[23;54H│[24;54H│[25;54H│[26;54H│[27;54H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [15X[2;53H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;55H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;55H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[14C[32m│[2;53H│[3;53H│[4;53H│[5;53H│[6;53H│[7;53H│[8;53H│[9;53H│[10;53H│[11;53H│[12;53H│[13;53H│[14;53H│[15;53H[39m│[16;53H│[17;53H│[18;53H│[19;53H│[20;53H│[21;53H│[22;53H│[23;53H│[24;53H│[25;53H│[26;53H│[27;53H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [14X[2;52H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;54H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;54H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [14X[15C(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[39G[?25l[13C[32m│[2;52H│[3;52H│[4;52H│[5;52H│[6;52H│[7;52H│[8;52H│[9;52H│[10;52H│[11;52H│[12;52H│[13;52H│[14;52H│[15;52H[39m│[16;52H│[17;52H│[18;52H│[19;52H│[20;52H│[21;52H│[22;52H│[23;52H│[24;52H│[25;52H│[26;52H│[27;52H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [13X[2;51H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;53H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;53H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[12C[32m│[2;51H│[3;51H│[4;51H│[5;51H│[6;51H│[7;51H│[8;51H│[9;51H│[10;51H│[11;51H│[12;51H│[13;51H│[14;51H│[15;51H[39m│[16;51H│[17;51H│[18;51H│[19;51H│[20;51H│[21;51H│[22;51H│[23;51H│[24;51H│[25;51H│[26;51H│[27;51H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [12X[2;50H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;52H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;52H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[11C[32m│[2;50H│[3;50H│[4;50H│[5;50H│[6;50H│[7;50H│[8;50H│[9;50H│[10;50H│[11;50H│[12;50H│[13;50H│[14;50H│[15;50H[39m│[16;50H│[17;50H│[18;50H│[19;50H│[20;50H│[21;50H│[22;50H│[23;50H│[24;50H│[25;50H│[26;50H│[27;50H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [11X[2;49H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;51H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;51H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[10C[32m│[2;49H│[3;49H│[4;49H│[5;49H│[6;49H│[7;49H│[8;49H│[9;49H│[10;49H│[11;49H│[12;49H│[13;49H│[14;49H│[15;49H[39m│[16;49H│[17;49H│[18;49H│[19;49H│[20;49H│[21;49H│[22;49H│[23;49H│[24;49H│[25;49H│[26;49H│[27;49H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [10X[2;48H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;50H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;50H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[9C[32m│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[39m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [9X[2;47H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;49H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;49H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[?25l[8C[32m│[2;47H│[3;47H│[4;47H│[5;47H│[6;47H│[7;47H│[8;47H│[9;47H│[10;47H│[11;47H│[12;47H│[13;47H│[14;47H│[15;47H[39m│[16;47H│[17;47H│[18;47H│[19;47H│[20;47H│[21;47H│[22;47H│[23;47H│[24;47H│[25;47H│[26;47H│[27;47H│(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [8X[2;46H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;48H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;48H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [8X[9C(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[39G[?25l[9C[32m│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[39m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[1;47H[1K[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [2;47H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;49H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[2;49H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;39H[10C(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [9Xmake qemu
+ -gdb
+*** Now run 'gdb' in another window.
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S
+ -gdb tcp::26000
+[?25l[1;48H[32m│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[39m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[30m[42m
+[0] 0:make*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[10;1H[?25l[1;48H│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[32m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[?12l[?25h[1;87H[?25l[39D│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[32m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:50 21-Dec-25(B[m[?12l[?25h[1;87Hd[Kgdb -ex "[?25l[30m[42m[28;1H[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:51 21-Dec-25(B[m[?12l[?25h[1;96Hsource.[K .gdbinit"[2;49H[?25l[1;48H│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[32m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[30m[42m
+[0] 0:gdb*                                                                               "PhuHoang@Kanumi:~/Pro" 15:51 21-Dec-25(B[m[?12l[?25h[2;49H[35m[1mGNU gdb (GDB) 16.3[3;49H(B[mCopyright (C) 2024 Free Software Foundation, Inc.[4;49HLicense GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[39m>[5;49HThis is free software: you are free to change and redistribute it.[6;49HThere is NO WARRANTY, to the extent permitted by law.[7;49HType "[1mshow copying(B[m" and "[1mshow warranty(B[m" for details.[8;49HThis GDB was configured as "x86_64-pc-linux-gnu".[9;49HType "[1mshow configuration(B[m" for configuration details.[10;49HFor bug reporting instructions, please see:[11;49H[32m<https://www.gnu.org/software/gdb/bugs/>[39m.[12;49HFind the GDB manual and other documentation resources online at:[13;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[15;49HFor help, type "[1mhelp(B[m".[16;49HType "[1mapropos word(B[m" to search for commands related to "word".[17;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[18;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[19;49Hdir/auto-load".[20;49HTo enable execution of this file add[21;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[22;49H23/.gdbinit[23;49H(B[mline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[24;49HTo completely disable this security protection add[25;49H        [27;49H[?25l[1dLicense GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[39m>[K[2;49HThis is free software: you are free to change and redistribute it.[K[3;49HThere is NO WARRANTY, to the extent permitted by law.[K[4;49HType "[1mshow copying(B[m" and "[1mshow warranty(B[m" for details.[K[5;49HThis GDB was configured as "x86_64-pc-linux-gnu".[K[6;49HType "[1mshow configuration(B[m" for configuration details.[K[7;49HFor bug reporting instructions, please see:[K[32m[8;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[9;49HFind the GDB manual and other documentation resources online at:[K[10;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[11;49H[K
+For help, type "[1mhelp(B[m".[K[13;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[14;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[15;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[16;49Hdir/auto-load".[K[17;49HTo enable execution of this file add[K[18;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[19;49H23/.gdbinit(B[m[K[20;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[21;49HTo completely disable this security protection add[K[22;49H        [1mset auto-load safe-path /(B[m[K[23;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[24;49HFor more information about this security protection see the[K[25;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[26;49H        info "(gdb)Auto-loading safe path"[K[27;49H[K[?12l[?25h[?25l[1dThis is free software: you are free to change and redistribute it.[K[2;49HThere is NO WARRANTY, to the extent permitted by law.[K[3;49HType "[1mshow copying(B[m" and "[1mshow warranty(B[m" for details.[K[4;49HThis GDB was configured as "x86_64-pc-linux-gnu".[K[5;49HType "[1mshow configuration(B[m" for configuration details.[K[6;49HFor bug reporting instructions, please see:[K[32m[7;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[8;49HFind the GDB manual and other documentation resources online at:[K[9;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[10;49H[K
+For help, type "[1mhelp(B[m".[K[12;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[13;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[14;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[15;49Hdir/auto-load".[K[16;49HTo enable execution of this file add[K[17;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[18;49H23/.gdbinit(B[m[K[19;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[20;49HTo completely disable this security protection add[K[21;49H        [1mset auto-load safe-path /(B[m[K[22;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[23;49HFor more information about this security protection see the[K[24;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[25;49H        info "(gdb)Auto-loading safe path"[K[26;49HThe target architecture is set to "riscv:rv64".[K[27;49H[K[?12l[?25h[?25l[1dThere is NO WARRANTY, to the extent permitted by law.[K[2;49HType "[1mshow copying(B[m" and "[1mshow warranty(B[m" for details.[K[3;49HThis GDB was configured as "x86_64-pc-linux-gnu".[K[4;49HType "[1mshow configuration(B[m" for configuration details.[K[5;49HFor bug reporting instructions, please see:[K[32m[6;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[7;49HFind the GDB manual and other documentation resources online at:[K[8;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[9;49H[K
+For help, type "[1mhelp(B[m".[K[11;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[12;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[13;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[14;49Hdir/auto-load".[K[15;49HTo enable execution of this file add[K[16;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[17;49H23/.gdbinit(B[m[K[18;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[19;49HTo completely disable this security protection add[K[20;49H        [1mset auto-load safe-path /(B[m[K[21;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[22;49HFor more information about this security protection see the[K[23;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[24;49H        info "(gdb)Auto-loading safe path"[K[25;49HThe target architecture is set to "riscv:rv64".[K[26;49Hwarning: No executable has been specified and target does not support[K[27;49Hdetermining executable automatically.  Try using the "[K[?12l[?25h[?25l[1;49HType "[1mshow copying(B[m" and "[1mshow warranty(B[m" for details.[K[2;49HThis GDB was configured as "x86_64-pc-linux-gnu".[K[3;49HType "[1mshow configuration(B[m" for configuration details.[K[4;49HFor bug reporting instructions, please see:[K[32m[5;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[6;49HFind the GDB manual and other documentation resources online at:[K[7;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[8;49H[K
+For help, type "[1mhelp(B[m".[K[10;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[11;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[12;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[13;49Hdir/auto-load".[K[14;49HTo enable execution of this file add[K[15;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[16;49H23/.gdbinit(B[m[K[17;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[18;49HTo completely disable this security protection add[K[19;49H        [1mset auto-load safe-path /(B[m[K[20;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[21;49HFor more information about this security protection see the[K[22;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[23;49H        info "(gdb)Auto-loading safe path"[K[24;49HThe target architecture is set to "riscv:rv64".[K[25;49Hwarning: No executable has been specified and target does not support[K[26;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[27;49H[K[?12l[?25h(ins)--Type <RET> for more, q to quit, c to continue without paging--c[?25l[1;49HThis GDB was configured as "x86_64-pc-linux-gnu".[K[2;49HType "[1mshow configuration(B[m" for configuration details.[K[3;49HFor bug reporting instructions, please see:[K[32m[4;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[5;49HFind the GDB manual and other documentation resources online at:[K[6;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[7;49H[K
+For help, type "[1mhelp(B[m".[K[9;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[10;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[11;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[12;49Hdir/auto-load".[K[13;49HTo enable execution of this file add[K[14;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[15;49H23/.gdbinit(B[m[K[16;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[17;49HTo completely disable this security protection add[K[18;49H        [1mset auto-load safe-path /(B[m[K[19;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[20;49HFor more information about this security protection see the[K[21;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[22;49H        info "(gdb)Auto-loading safe path"[K[23;49HThe target architecture is set to "riscv:rv64".[K[24;49Hwarning: No executable has been specified and target does not support[K[25;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[26;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[27;49H[K[?12l[?25h[?25l[1dType "[1mshow configuration(B[m" for configuration details.[K[2;49HFor bug reporting instructions, please see:[K[32m[3;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[4;49HFind the GDB manual and other documentation resources online at:[K[5;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[6;49H[K
+For help, type "[1mhelp(B[m".[K[8;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[9;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[10;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[11;49Hdir/auto-load".[K[12;49HTo enable execution of this file add[K[13;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[14;49H23/.gdbinit(B[m[K[15;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[16;49HTo completely disable this security protection add[K[17;49H        [1mset auto-load safe-path /(B[m[K[18;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[19;49HFor more information about this security protection see the[K[20;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[21;49H        info "(gdb)Auto-loading safe path"[K[22;49HThe target architecture is set to "riscv:rv64".[K[23;49Hwarning: No executable has been specified and target does not support[K[24;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[25;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[26;49H0x0000000000001000[39m in [33m??[39m ()[K[27;49H[K[?12l[?25h(ins)(gdb) b syscall[?25l[1;49HFor bug reporting instructions, please see:[K[32m[2;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[3;49HFind the GDB manual and other documentation resources online at:[K[4;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[5;49H[K
+For help, type "[1mhelp(B[m".[K[7;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[8;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[9;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[10;49Hdir/auto-load".[K[11;49HTo enable execution of this file add[K[12;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[13;49H23/.gdbinit(B[m[K[14;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[15;49HTo completely disable this security protection add[K[16;49H        [1mset auto-load safe-path /(B[m[K[17;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[18;49HFor more information about this security protection see the[K[19;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[20;49H        info "(gdb)Auto-loading safe path"[K[21;49HThe target architecture is set to "riscv:rv64".[K[22;49Hwarning: No executable has been specified and target does not support[K[23;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[24;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[25;49H0x0000000000001000[39m in [33m??[39m ()[K[26;49H(ins)(gdb) b syscall[K[27;49H[K[?12l[?25h[?25l[32m[1d<https://www.gnu.org/software/gdb/bugs/>[39m.[K[2;49HFind the GDB manual and other documentation resources online at:[K[3;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[4;49H[K
+For help, type "[1mhelp(B[m".[K[6;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[7;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[8;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[9;49Hdir/auto-load".[K[10;49HTo enable execution of this file add[K[11;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[12;49H23/.gdbinit(B[m[K[13;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[14;49HTo completely disable this security protection add[K[15;49H        [1mset auto-load safe-path /(B[m[K[16;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[17;49HFor more information about this security protection see the[K[18;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[19;49H        info "(gdb)Auto-loading safe path"[K[20;49HThe target architecture is set to "riscv:rv64".[K[21;49Hwarning: No executable has been specified and target does not support[K[22;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[23;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[24;49H0x0000000000001000[39m in [33m??[39m ()[K[25;49H(ins)(gdb) b syscall[K[26;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[27;49H[K[?12l[?25h(ins)(gdb) c[?25l[1;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[2;49H[K
+For help, type "[1mhelp(B[m".[K[4;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[5;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[6;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[7;49Hdir/auto-load".[K[8;49HTo enable execution of this file add[K[9;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[10;49H23/.gdbinit(B[m[K[11;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[12;49HTo completely disable this security protection add[K[13;49H        [1mset auto-load safe-path /(B[m[K[14;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[15;49HFor more information about this security protection see the[K[16;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[17;49H        info "(gdb)Auto-loading safe path"[K[18;49HThe target architecture is set to "riscv:rv64".[K[19;49Hwarning: No executable has been specified and target does not support[K[20;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[21;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[22;49H0x0000000000001000[39m in [33m??[39m ()[K[23;49H(ins)(gdb) b syscall[K[24;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[25;49H(ins)(gdb) c[K[26;49HContinuing.[K[27;49H[K[?12l[?25h[11;1Hx[27;49H[11;2Hv[27;49H[11;3H6 [27;49H[11;5Hkernel is booting[27;49H[13;1Hha[27;49H[13;3Hrt [27;49H[13;6H2 starting
+hart 1 starting[27;49H[?25l[1dType "[1mapropos word(B[m" to search for commands related to "word".[K[2;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[3;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[4;49Hdir/auto-load".[K[5;49HTo enable execution of this file add[K[6;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[7;49H23/.gdbinit(B[m[K[8;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[9;49HTo completely disable this security protection add[K[10;49H        [1mset auto-load safe-path /(B[m[K[11;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[12;49HFor more information about this security protection see the[K[13;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[14;49H        info "(gdb)Auto-loading safe path"[K[15;49HThe target architecture is set to "riscv:rv64".[K[16;49Hwarning: No executable has been specified and target does not support[K[17;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[18;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[19;49H0x0000000000001000[39m in [33m??[39m ()[K[20;49H(ins)(gdb) b syscall[K[21;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[22;49H(ins)(gdb) c[K[23;49HContinuing.[K[24;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[2m[26;49H133(B[m     [31m{[39m[K[27;49H[K[?12l[?25h(ins)(gdb) bt[?25l[1;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[2;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[3;49Hdir/auto-load".[K[4;49HTo enable execution of this file add[K[5;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[6;49H23/.gdbinit(B[m[K[7;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[8;49HTo completely disable this security protection add[K[9;49H        [1mset auto-load safe-path /(B[m[K[10;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[11;49HFor more information about this security protection see the[K[12;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[13;49H        info "(gdb)Auto-loading safe path"[K[14;49HThe target architecture is set to "riscv:rv64".[K[15;49Hwarning: No executable has been specified and target does not support[K[16;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[17;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[18;49H0x0000000000001000[39m in [33m??[39m ()[K[19;49H(ins)(gdb) b syscall[K[20;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[21;49H(ins)(gdb) c[K[22;49HContinuing.[K[23;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[2m[25;49H133(B[m     [31m{[39m[K[26;49H(ins)(gdb) bt[K[27;49H[K[?12l[?25h[?25l[1ddir/auto-load".[K[2;49HTo enable execution of this file add[K[3;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[4;49H23/.gdbinit(B[m[K[5;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[6;49HTo completely disable this security protection add[K[7;49H        [1mset auto-load safe-path /(B[m[K[8;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[9;49HFor more information about this security protection see the[K[10;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[11;49H        info "(gdb)Auto-loading safe path"[K[12;49HThe target architecture is set to "riscv:rv64".[K[13;49Hwarning: No executable has been specified and target does not support[K[14;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[15;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[16;49H0x0000000000001000[39m in [33m??[39m ()[K[17;49H(ins)(gdb) b syscall[K[18;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[19;49H(ins)(gdb) c[K[20;49HContinuing.[K[21;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[2m[23;49H133(B[m     [31m{[39m[K[24;49H(ins)(gdb) bt[K[25;49H#0  [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[26;49H#1  [34m0x0000000080001dfc[39m in [33musertrap[39m () at [32mkernel/trap.c[39m:[2m67(B[m[K[27;49H[K[?12l[?25h[?25l[1dTo enable execution of this file add[K[2;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[3;49H23/.gdbinit(B[m[K[4;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[5;49HTo completely disable this security protection add[K[6;49H        [1mset auto-load safe-path /(B[m[K[7;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[8;49HFor more information about this security protection see the[K[9;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[10;49H        info "(gdb)Auto-loading safe path"[K[11;49HThe target architecture is set to "riscv:rv64".[K[12;49Hwarning: No executable has been specified and target does not support[K[13;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[14;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[15;49H0x0000000000001000[39m in [33m??[39m ()[K[16;49H(ins)(gdb) b syscall[K[17;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[18;49H(ins)(gdb) c[K[19;49HContinuing.[K[20;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[2m[22;49H133(B[m     [31m{[39m[K[23;49H(ins)(gdb) bt[K[24;49H#0  [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[25;49H#1  [34m0x0000000080001dfc[39m in [33musertrap[39m () at [32mkernel/trap.c[39m:[2m67(B[m[K[26;49H#2  [34m0x0505050505050505[39m in [33m??[39m ()[K[27;49H[K[?12l[?25h(ins)(gdb) layout src[?25l[1;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[2;49H23/.gdbinit(B[m[K[3;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[4;49HTo completely disable this security protection add[K[5;49H        [1mset auto-load safe-path /(B[m[K[6;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[7;49HFor more information about this security protection see the[K[8;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[9;49H        info "(gdb)Auto-loading safe path"[K[10;49HThe target architecture is set to "riscv:rv64".[K[11;49Hwarning: No executable has been specified and target does not support[K[12;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[13;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[14;49H0x0000000000001000[39m in [33m??[39m ()[K[15;49H(ins)(gdb) b syscall[K[16;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[17;49H(ins)(gdb) c[K[18;49HContinuing.[K[19;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[2m[21;49H133(B[m     [31m{[39m[K[22;49H(ins)(gdb) bt[K[23;49H#0  [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[24;49H#1  [34m0x0000000080001dfc[39m in [33musertrap[39m () at [32mkernel/trap.c[39m:[2m67(B[m[K[25;49H#2  [34m0x0505050505050505[39m in [33m??[39m ()[K[26;49H(ins)(gdb) layout src[K[27;49H[K[?12l[?25h[?25l[1d[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?12l[?25h[1d[1;27r[2;49H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1d[K[36m┌─kernel/syscall.c─────────────────────────────────────────────────────────────┐[2;49H│[39m   [2m   127 (B[m[31m[[39mSYS_mkdir[31m][39m   sys_mkdir[31m,[44C[36m│[3;49H│[39m   [2m   128 (B[m[31m[[39mSYS_close[31m][39m   sys_close[31m,[44C[36m│[3;1H[1;28r[4;49H(B[m[36m│[39m   [2m   129 (B[m[31m};[66C[36m│[5;49H(B[m[36m│[39m   [2m   130 [68C(B[m[36m│[6;49H│[39m   [2m   131 (B[m[32mvoid[64C[36m│[7;49H│[39m   [2m   132 (B[m[1msyscall(B[m[31m([32mvoid[31m)[55C[36m│[8;49H│[39mB+>[2m   133 (B[m[7m{[67C(B[m[36m│[9;49H│[39m   [2m   134 (B[m  [32mint[39m num[31m;[58C[36m│[10;49H│[39m   [2m   135 (B[m  [34m[1mstruct(B[m [32mproc[39m [31m*[39mp [31m=[39m [1mmyproc(B[m[31m();[40C[36m│[11;49H│[39m   [2m   136 [68C(B[m[36m│[12;49H│[39m   [2m   137 (B[m  num [31m=[39m p[31m->[39mtrapframe[31m->[39ma7[31m;[43C[36m│[13;49H│[39m   [2m   138 (B[m  [34m[1mif(B[m[31m([39mnum [31m>[39m [35m0[39m [31m&&[39m num [31m<[39m [1mNELEM(B[m[31m([39msyscalls[31m)[39m [31m&&[39m syscalls[31m[[39mnum[31m])[39m [31m{[11C[36m│[14;49H│[39m   [2m   139 (B[m    [36m// Use num to lookup the system call function for num, call it,[39m [36m│[15;49H│[39m   [2m   140 (B[m    [36m// and store its return value in p->trapframe->a0[15C│[16;49H│[39m   [2m   141 (B[m    p[31m->[39mtrapframe[31m->[39ma0 [31m=[39m syscalls[31m[[39mnum[31m]();[29C[36m│[17;49H└──────────────────────────────────────────────────────────────────────────────┘[18;49H[39m[7mremote Thread 1.1 In: syscall                              L133  PC: 0x800020c2 [18;128H(B[m[61D[7m(src) In: syscall[1;49H[36m[1m┌─kernel/syscall.c─────────────────────────────────────────────────────────────┐[2;49H│[78C│[3;49H│[78C│[4;49H│[78C│[5;49H│[78C│[6;49H│[78C│[7;49H│[78C│[8;49H│[78C│[9;49H│[78C│[10;49H│[78C│[11;49H│[78C│[12;49H│[78C│[13;49H│[78C│[14;49H│[78C│[15;49H│[78C│[16;49H(B[m[36m[1m[7m│[78C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘(B[m[17;1H[1;27r[2;49H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1d[K[36m[1m[7m┌─kernel/syscall.c─────────────────────────────────────────────────────────────┐[2;49H│(B[m   [2m   127 (B[m[31m[[39mSYS_mkdir[31m][39m   sys_mkdir[31m,[44C[36m[1m[7m│[3;49H│(B[m   [2m   128 (B[m[31m[[39mSYS_close[31m][39m   sys_close[31m,[44C[36m[1m[7m│[4;49H│(B[m   [2m   129 (B[m[31m};[66C[36m[1m[7m│[5;49H│(B[m   [2m   130 [68C(B[m[36m[1m[7m│[6;49H│(B[m   [2m   131 (B[m[32mvoid[64C[36m[1m[7m│[6;1H[1;28r[7;49H(B[m[36m[1m[7m│(B[m   [2m   132 (B[m[1msyscall(B[m[31m([32mvoid[31m)[55C[36m[1m[7m│[8;49H│(B[mB+>[2m   133 (B[m[7m{[67C[36m[1m│[9;49H│(B[m   [2m   134 (B[m  [32mint[39m num[31m;[58C[36m[1m[7m│[10;49H│(B[m   [2m   135 (B[m  [34m[1mstruct(B[m [32mproc[39m [31m*[39mp [31m=[39m [1mmyproc(B[m[31m();[40C[36m[1m[7m│[11;49H│(B[m   [2m   136 [68C(B[m[36m[1m[7m│[12;49H│(B[m   [2m   137 (B[m  num [31m=[39m p[31m->[39mtrapframe[31m->[39ma7[31m;[43C[36m[1m[7m│[13;49H│(B[m   [2m   138 (B[m  [34m[1mif(B[m[31m([39mnum [31m>[39m [35m0[39m [31m&&[39m num [31m<[39m [1mNELEM(B[m[31m([39msyscalls[31m)[39m [31m&&[39m syscalls[31m[[39mnum[31m])[39m [31m{[11C[36m[1m[7m│[14;49H│(B[m   [2m   139 (B[m    [36m// Use num to lookup the system call function for num, call it,[39m [36m[1m[7m│[15;49H│(B[m   [2m   140 (B[m    [36m// and store its return value in p->trapframe->a0[15C[1m[7m│[16;49H│(B[m   [2m   141 (B[m    p[31m->[39mtrapframe[31m->[39ma0 [31m=[39m syscalls[31m[[39mnum[31m]();[29C[36m[1m[7m│[17;49H└──────────────────────────────────────────────────────────────────────────────┘[18;49H(B[m[7mremote Thread 1.1 (src) In: syscall                        L133  PC: 0x800020c2 [18;128H(B[m[19;49H(gdb) n[20;49H[18;111H[7m5[15Ce(B[m[8;52H [7C[31m{[10;52H[39m>[7C[7m  struct proc *p = myproc();[20;49H(B[m(gdb) n[21;49H[18;111H[7m7[14Cd8(B[m[10;52H [7C  [34m[1mstruct(B[m [32mproc[39m [31m*[39mp [31m=[39m [1mmyproc(B[m[31m();[12;52H[39m>[7C[7m  num = p->trapframe->a7;[21;49H(B[m(gdb) p /x *p[19;49H[36m$1[39m = {[36mlock[39m = {[36mlocked[39m = 0x0, [36mname[39m = 0x800081b8, [36mcpu[39m = 0x0}, [36mstate[39m = 0x4,[20;49H  [36mchan[39m = 0x0, [36mkilled[39m = 0x0, [36mxstate[39m = 0x0, [36mpid[39m = 0x1, [36mparent[39m = 0x0,[21;49H  [36mkstack[39m = 0x3fffffd000, [36msz[39m = 0x1000, [36mpagetable[39m = 0x87f73000,[22;51H[36mtrapframe[39m = 0x87f74000, [36mcontext[39m = {[36mra[39m = 0x8000153e, [36msp[39m = 0x3fffffdea0,[23;53H[36ms0[39m = 0x3fffffded0, [36ms1[39m = 0x8000b6b0, [36ms2[39m = 0x8000b280, [36ms3[39m = 0x1, [36ms4[39m = 0x3,[24;53H[36ms5[39m = 0x8001c350, [36ms6[39m = 0x1, [36ms7[39m = 0x4, [36ms8[39m = 0xffffffffffffffff, [36ms9[39m = 0x0,[25;53H[36ms10[39m = 0x0, [36ms11[39m = 0x0}, [36mofile[39m = {0x0 [2m<repeats 16 times>(B[m}, [36mcwd[39m = 0x800197c0,[26;51H[36mname[39m = {0x69, 0x6e, 0x69, 0x74, 0x63, 0x6f, 0x64, 0x65, 0x0, 0x0, 0x0, 0x0,[27;49H--Type <RET> for more, q to quit, c to continue without paging--[19;49H[?25l[36m[1m[7m[1d┌─kernel/syscall.c─────────────────────────────────────────────────────────────┐[2;49H│(B[m   [2m   127 (B[m[31m[[39mSYS_mkdir[31m][39m   sys_mkdir[31m,[39m[44X[36m[1m[7m[44C│[3;49H│(B[m   [2m   128 (B[m[31m[[39mSYS_close[31m][39m   sys_close[31m,[39m[44X[36m[1m[7m[44C│[4;49H│(B[m   [2m   129 (B[m[31m};[39m[66X[36m[1m[7m[66C│[5;49H│(B[m   [2m   130 (B[m[68X[36m[1m[7m[68C│[6;49H│(B[m   [2m   131 (B[m[32mvoid[39m[64X[36m[1m[7m[64C│[7;49H│(B[m   [2m   132 (B[m[1msyscall(B[m[31m([32mvoid[31m)[39m[55X[36m[1m[7m[55C│[8;49H│(B[mB+ [2m   133 (B[m[31m{[39m[67X[36m[1m[7m[67C│[9;49H│(B[m   [2m   134 (B[m  [32mint[39m num[31m;[39m[58X[36m[1m[7m[58C│[10;49H│(B[m   [2m   135 (B[m  [34m[1mstruct(B[m [32mproc[39m [31m*[39mp [31m=[39m [1mmyproc(B[m[31m();[39m[40X[36m[1m[7m[40C│[11;49H│(B[m   [2m   136 (B[m[68X[36m[1m[7m[68C│[12;49H│(B[m  >[2m   137 (B[m[7m  num = p->trapframe->a7;(B[m[43X[36m[1m[7m[43C│[13;49H│(B[m   [2m   138 (B[m  [34m[1mif(B[m[31m([39mnum [31m>[39m [35m0[39m [31m&&[39m num [31m<[39m [1mNELEM(B[m[31m([39msyscalls[31m)[39m [31m&&[39m syscalls[31m[[39mnum[31m])[39m [31m{[39m[11X[36m[1m[7m[11C│[14;49H│(B[m   [2m   139 (B[m    [36m// Use num to lookup the system call function for num, call it,[39m [36m[1m[7m│[15;49H│(B[m   [2m   140 (B[m    [36m// and store its return value in p->trapframe->a0[39m[15X[36m[1m[7m[15C│[16;49H│(B[m   [2m   141 (B[m    p[31m->[39mtrapframe[31m->[39ma0 [31m=[39m syscalls[31m[[39mnum[31m]();[39m[29X[36m[1m[7m[29C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘(B[m[7m[18;49Hremote Thread 1.1 (src) In: syscall                        L137  PC: 0x800020d8 (B[m[19;49H  [36mkstack[39m = 0x3fffffd000, [36msz[39m = 0x1000, [36mpagetable[39m = 0x87f73000,[K[20;49H[2X[36m[2Ctrapframe[39m = 0x87f74000, [36mcontext[39m = {[36mra[39m = 0x8000153e, [36msp[39m = 0x3fffffdea0,[K[21;49H[4X[36m[4Cs0[39m = 0x3fffffded0, [36ms1[39m = 0x8000b6b0, [36ms2[39m = 0x8000b280, [36ms3[39m = 0x1, [36ms4[39m = 0x3,[K[22;49H[4X[36m[4Cs5[39m = 0x8001c350, [36ms6[39m = 0x1, [36ms7[39m = 0x4, [36ms8[39m = 0xffffffffffffffff, [36ms9[39m = 0x0,[K[23;49H[4X[36m[4Cs10[39m = 0x0, [36ms11[39m = 0x0}, [36mofile[39m = {0x0 [2m<repeats 16 times>(B[m}, [36mcwd[39m = 0x800197c0,[K[24;49H[2X[36m[2Cname[39m = {0x69, 0x6e, 0x69, 0x74, 0x63, 0x6f, 0x64, 0x65, 0x0, 0x0, 0x0, 0x0,[K[25;49H--Type <RET> for more, q to quit, c to continue without paging--[K[26;49H[K
+[K[?12l[?25h[26;53H0x0, 0x0, 0x0, 0x0}}[27;49H(gdb) p /x p->trapframe ->a7[19;49H[?25l[36m[1m[7m[1d┌─kernel/syscall.c─────────────────────────────────────────────────────────────┐[2;49H│(B[m   [2m   127 (B[m[31m[[39mSYS_mkdir[31m][39m   sys_mkdir[31m,[39m[44X[36m[1m[7m[44C│[3;49H│(B[m   [2m   128 (B[m[31m[[39mSYS_close[31m][39m   sys_close[31m,[39m[44X[36m[1m[7m[44C│[4;49H│(B[m   [2m   129 (B[m[31m};[39m[66X[36m[1m[7m[66C│[5;49H│(B[m   [2m   130 (B[m[68X[36m[1m[7m[68C│[6;49H│(B[m   [2m   131 (B[m[32mvoid[39m[64X[36m[1m[7m[64C│[7;49H│(B[m   [2m   132 (B[m[1msyscall(B[m[31m([32mvoid[31m)[39m[55X[36m[1m[7m[55C│[8;49H│(B[mB+ [2m   133 (B[m[31m{[39m[67X[36m[1m[7m[67C│[9;49H│(B[m   [2m   134 (B[m  [32mint[39m num[31m;[39m[58X[36m[1m[7m[58C│[10;49H│(B[m   [2m   135 (B[m  [34m[1mstruct(B[m [32mproc[39m [31m*[39mp [31m=[39m [1mmyproc(B[m[31m();[39m[40X[36m[1m[7m[40C│[11;49H│(B[m   [2m   136 (B[m[68X[36m[1m[7m[68C│[12;49H│(B[m  >[2m   137 (B[m[7m  num = p->trapframe->a7;(B[m[43X[36m[1m[7m[43C│[13;49H│(B[m   [2m   138 (B[m  [34m[1mif(B[m[31m([39mnum [31m>[39m [35m0[39m [31m&&[39m num [31m<[39m [1mNELEM(B[m[31m([39msyscalls[31m)[39m [31m&&[39m syscalls[31m[[39mnum[31m])[39m [31m{[39m[11X[36m[1m[7m[11C│[14;49H│(B[m   [2m   139 (B[m    [36m// Use num to lookup the system call function for num, call it,[39m [36m[1m[7m│[15;49H│(B[m   [2m   140 (B[m    [36m// and store its return value in p->trapframe->a0[39m[15X[36m[1m[7m[15C│[16;49H│(B[m   [2m   141 (B[m    p[31m->[39mtrapframe[31m->[39ma0 [31m=[39m syscalls[31m[[39mnum[31m]();[39m[29X[36m[1m[7m[29C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘(B[m[7m[18;49Hremote Thread 1.1 (src) In: syscall                        L137  PC: 0x800020d8 (B[m[19;49H[4X[36m[4Cs0[39m = 0x3fffffded0, [36ms1[39m = 0x8000b6b0, [36ms2[39m = 0x8000b280, [36ms3[39m = 0x1, [36ms4[39m = 0x3,[K[20;49H[4X[36m[4Cs5[39m = 0x8001c350, [36ms6[39m = 0x1, [36ms7[39m = 0x4, [36ms8[39m = 0xffffffffffffffff, [36ms9[39m = 0x0,[K[21;49H[4X[36m[4Cs10[39m = 0x0, [36ms11[39m = 0x0}, [36mofile[39m = {0x0 [2m<repeats 16 times>(B[m}, [36mcwd[39m = 0x800197c0,[K[22;49H[2X[36m[2Cname[39m = {0x69, 0x6e, 0x69, 0x74, 0x63, 0x6f, 0x64, 0x65, 0x0, 0x0, 0x0, 0x0,[K[23;49H--Type <RET> for more, q to quit, c to continue without paging--[K[24;49H[4X[4C0x0, 0x0, 0x0, 0x0}}[K[25;49H(gdb) p /x p->trapframe->a7[K[36m[26;49H$2[39m = 0x7[K[27;49H[K[?12l[?25h(gdb) p SYS_exec [19;49H[?25l[36m[1m[7m[1d┌─kernel/syscall.c─────────────────────────────────────────────────────────────┐[2;49H│(B[m   [2m   127 (B[m[31m[[39mSYS_mkdir[31m][39m   sys_mkdir[31m,[39m[44X[36m[1m[7m[44C│[3;49H│(B[m   [2m   128 (B[m[31m[[39mSYS_close[31m][39m   sys_close[31m,[39m[44X[36m[1m[7m[44C│[4;49H│(B[m   [2m   129 (B[m[31m};[39m[66X[36m[1m[7m[66C│[5;49H│(B[m   [2m   130 (B[m[68X[36m[1m[7m[68C│[6;49H│(B[m   [2m   131 (B[m[32mvoid[39m[64X[36m[1m[7m[64C│[7;49H│(B[m   [2m   132 (B[m[1msyscall(B[m[31m([32mvoid[31m)[39m[55X[36m[1m[7m[55C│[8;49H│(B[mB+ [2m   133 (B[m[31m{[39m[67X[36m[1m[7m[67C│[9;49H│(B[m   [2m   134 (B[m  [32mint[39m num[31m;[39m[58X[36m[1m[7m[58C│[10;49H│(B[m   [2m   135 (B[m  [34m[1mstruct(B[m [32mproc[39m [31m*[39mp [31m=[39m [1mmyproc(B[m[31m();[39m[40X[36m[1m[7m[40C│[11;49H│(B[m   [2m   136 (B[m[68X[36m[1m[7m[68C│[12;49H│(B[m  >[2m   137 (B[m[7m  num = p->trapframe->a7;(B[m[43X[36m[1m[7m[43C│[13;49H│(B[m   [2m   138 (B[m  [34m[1mif(B[m[31m([39mnum [31m>[39m [35m0[39m [31m&&[39m num [31m<[39m [1mNELEM(B[m[31m([39msyscalls[31m)[39m [31m&&[39m syscalls[31m[[39mnum[31m])[39m [31m{[39m[11X[36m[1m[7m[11C│[14;49H│(B[m   [2m   139 (B[m    [36m// Use num to lookup the system call function for num, call it,[39m [36m[1m[7m│[15;49H│(B[m   [2m   140 (B[m    [36m// and store its return value in p->trapframe->a0[39m[15X[36m[1m[7m[15C│[16;49H│(B[m   [2m   141 (B[m    p[31m->[39mtrapframe[31m->[39ma0 [31m=[39m syscalls[31m[[39mnum[31m]();[39m[29X[36m[1m[7m[29C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘(B[m[7m[18;49Hremote Thread 1.1 (src) In: syscall                        L137  PC: 0x800020d8 (B[m[19;49H[4X[36m[4Cs10[39m = 0x0, [36ms11[39m = 0x0}, [36mofile[39m = {0x0 [2m<repeats 16 times>(B[m}, [36mcwd[39m = 0x800197c0,[K[20;49H[2X[36m[2Cname[39m = {0x69, 0x6e, 0x69, 0x74, 0x63, 0x6f, 0x64, 0x65, 0x0, 0x0, 0x0, 0x0,[K[21;49H--Type <RET> for more, q to quit, c to continue without paging--[K[22;49H[4X[4C0x0, 0x0, 0x0, 0x0}}[K[23;49H(gdb) p /x p->trapframe->a7[K[36m[24;49H$2[39m = 0x7[K[25;49H(gdb) p SYS_exec [K[26;49H[K
+[K[?12l[?25h[A[36m$3[39m = 7[27;49H(gdb) p /x $sstatus[?25l[36m[1m[7m[1;49H┌─kernel/syscall.c─────────────────────────────────────────────────────────────┐[2;49H│(B[m   [2m   127 (B[m[31m[[39mSYS_mkdir[31m][39m   sys_mkdir[31m,[39m[44X[36m[1m[7m[44C│[3;49H│(B[m   [2m   128 (B[m[31m[[39mSYS_close[31m][39m   sys_close[31m,[39m[44X[36m[1m[7m[44C│[4;49H│(B[m   [2m   129 (B[m[31m};[39m[66X[36m[1m[7m[66C│[5;49H│(B[m   [2m   130 (B[m[68X[36m[1m[7m[68C│[6;49H│(B[m   [2m   131 (B[m[32mvoid[39m[64X[36m[1m[7m[64C│[7;49H│(B[m   [2m   132 (B[m[1msyscall(B[m[31m([32mvoid[31m)[39m[55X[36m[1m[7m[55C│[8;49H│(B[mB+ [2m   133 (B[m[31m{[39m[67X[36m[1m[7m[67C│[9;49H│(B[m   [2m   134 (B[m  [32mint[39m num[31m;[39m[58X[36m[1m[7m[58C│[10;49H│(B[m   [2m   135 (B[m  [34m[1mstruct(B[m [32mproc[39m [31m*[39mp [31m=[39m [1mmyproc(B[m[31m();[39m[40X[36m[1m[7m[40C│[11;49H│(B[m   [2m   136 (B[m[68X[36m[1m[7m[68C│[12;49H│(B[m  >[2m   137 (B[m[7m  num = p->trapframe->a7;(B[m[43X[36m[1m[7m[43C│[13;49H│(B[m   [2m   138 (B[m  [34m[1mif(B[m[31m([39mnum [31m>[39m [35m0[39m [31m&&[39m num [31m<[39m [1mNELEM(B[m[31m([39msyscalls[31m)[39m [31m&&[39m syscalls[31m[[39mnum[31m])[39m [31m{[39m[11X[36m[1m[7m[11C│[14;49H│(B[m   [2m   139 (B[m    [36m// Use num to lookup the system call function for num, call it,[39m [36m[1m[7m│[15;49H│(B[m   [2m   140 (B[m    [36m// and store its return value in p->trapframe->a0[39m[15X[36m[1m[7m[15C│[16;49H│(B[m   [2m   141 (B[m    p[31m->[39mtrapframe[31m->[39ma0 [31m=[39m syscalls[31m[[39mnum[31m]();[39m[29X[36m[1m[7m[29C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘(B[m[7m[18;49Hremote Thread 1.1 (src) In: syscall                        L137  PC: 0x800020d8 (B[m[19;49H--Type <RET> for more, q to quit, c to continue without paging--[K[20;49H[4X[4C0x0, 0x0, 0x0, 0x0}}[K[21;49H(gdb) p /x p->trapframe->a7[K[36m[22;49H$2[39m = 0x7[K[23;49H(gdb) p SYS_exec [K[36m[24;49H$3[39m = 7[K[25;49H(gdb) p /x $sstatus[K[36m[26;49H$4[39m = 0x200000022[K[27;49H(gdb) [K[?12l[?25hp /x $sstatus & SST[19;49H[?25l[36m[1m[7m[1d┌─kernel/syscall.c─────────────────────────────────────────────────────────────┐[2;49H│(B[m   [2m   127 (B[m[31m[[39mSYS_mkdir[31m][39m   sys_mkdir[31m,[39m[44X[36m[1m[7m[44C│[3;49H│(B[m   [2m   128 (B[m[31m[[39mSYS_close[31m][39m   sys_close[31m,[39m[44X[36m[1m[7m[44C│[4;49H│(B[m   [2m   129 (B[m[31m};[39m[66X[36m[1m[7m[66C│[5;49H│(B[m   [2m   130 (B[m[68X[36m[1m[7m[68C│[6;49H│(B[m   [2m   131 (B[m[32mvoid[39m[64X[36m[1m[7m[64C│[7;49H│(B[m   [2m   132 (B[m[1msyscall(B[m[31m([32mvoid[31m)[39m[55X[36m[1m[7m[55C│[8;49H│(B[mB+ [2m   133 (B[m[31m{[39m[67X[36m[1m[7m[67C│[9;49H│(B[m   [2m   134 (B[m  [32mint[39m num[31m;[39m[58X[36m[1m[7m[58C│[10;49H│(B[m   [2m   135 (B[m  [34m[1mstruct(B[m [32mproc[39m [31m*[39mp [31m=[39m [1mmyproc(B[m[31m();[39m[40X[36m[1m[7m[40C│[11;49H│(B[m   [2m   136 (B[m[68X[36m[1m[7m[68C│[12;49H│(B[m  >[2m   137 (B[m[7m  num = p->trapframe->a7;(B[m[43X[36m[1m[7m[43C│[13;49H│(B[m   [2m   138 (B[m  [34m[1mif(B[m[31m([39mnum [31m>[39m [35m0[39m [31m&&[39m num [31m<[39m [1mNELEM(B[m[31m([39msyscalls[31m)[39m [31m&&[39m syscalls[31m[[39mnum[31m])[39m [31m{[39m[11X[36m[1m[7m[11C│[14;49H│(B[m   [2m   139 (B[m    [36m// Use num to lookup the system call function for num, call it,[39m [36m[1m[7m│[15;49H│(B[m   [2m   140 (B[m    [36m// and store its return value in p->trapframe->a0[39m[15X[36m[1m[7m[15C│[16;49H│(B[m   [2m   141 (B[m    p[31m->[39mtrapframe[31m->[39ma0 [31m=[39m syscalls[31m[[39mnum[31m]();[39m[29X[36m[1m[7m[29C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘(B[m[7m[18;49Hremote Thread 1.1 (src) In: syscall                        L137  PC: 0x800020d8 (B[m[19;49H(gdb) p /x p->trapframe->a7[K[36m[20;49H$2[39m = 0x7[K[21;49H(gdb) p SYS_exec [K[36m[22;49H$3[39m = 7[K[23;49H(gdb) p /x $sstatus[K[36m[24;49H$4[39m = 0x200000022[K[25;49H(gdb) p /x $sstatus & SST[K[26;49H[K
+[K[?12l[?25h[ASSTATUS_SIE   SSTATUS_SPIE  SSTATUS_SPP   SSTATUS_UIE   SSTATUS_UPIE[27;49H(gdb) p /x $sstatus & SSTATUS_SP[19;49H[?25l[36m[1m[7m[1d┌─kernel/syscall.c─────────────────────────────────────────────────────────────┐[2;49H│(B[m   [2m   127 (B[m[31m[[39mSYS_mkdir[31m][39m   sys_mkdir[31m,[39m[44X[36m[1m[7m[44C│[3;49H│(B[m   [2m   128 (B[m[31m[[39mSYS_close[31m][39m   sys_close[31m,[39m[44X[36m[1m[7m[44C│[4;49H│(B[m   [2m   129 (B[m[31m};[39m[66X[36m[1m[7m[66C│[5;49H│(B[m   [2m   130 (B[m[68X[36m[1m[7m[68C│[6;49H│(B[m   [2m   131 (B[m[32mvoid[39m[64X[36m[1m[7m[64C│[7;49H│(B[m   [2m   132 (B[m[1msyscall(B[m[31m([32mvoid[31m)[39m[55X[36m[1m[7m[55C│[8;49H│(B[mB+ [2m   133 (B[m[31m{[39m[67X[36m[1m[7m[67C│[9;49H│(B[m   [2m   134 (B[m  [32mint[39m num[31m;[39m[58X[36m[1m[7m[58C│[10;49H│(B[m   [2m   135 (B[m  [34m[1mstruct(B[m [32mproc[39m [31m*[39mp [31m=[39m [1mmyproc(B[m[31m();[39m[40X[36m[1m[7m[40C│[11;49H│(B[m   [2m   136 (B[m[68X[36m[1m[7m[68C│[12;49H│(B[m  >[2m   137 (B[m[7m  num = p->trapframe->a7;(B[m[43X[36m[1m[7m[43C│[13;49H│(B[m   [2m   138 (B[m  [34m[1mif(B[m[31m([39mnum [31m>[39m [35m0[39m [31m&&[39m num [31m<[39m [1mNELEM(B[m[31m([39msyscalls[31m)[39m [31m&&[39m syscalls[31m[[39mnum[31m])[39m [31m{[39m[11X[36m[1m[7m[11C│[14;49H│(B[m   [2m   139 (B[m    [36m// Use num to lookup the system call function for num, call it,[39m [36m[1m[7m│[15;49H│(B[m   [2m   140 (B[m    [36m// and store its return value in p->trapframe->a0[39m[15X[36m[1m[7m[15C│[16;49H│(B[m   [2m   141 (B[m    p[31m->[39mtrapframe[31m->[39ma0 [31m=[39m syscalls[31m[[39mnum[31m]();[39m[29X[36m[1m[7m[29C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘(B[m[7m[18;49Hremote Thread 1.1 (src) In: syscall                        L137  PC: 0x800020d8 (B[m[19;49H(gdb) p SYS_exec [K[36m[20;49H$3[39m = 7[K[21;49H(gdb) p /x $sstatus[K[36m[22;49H$4[39m = 0x200000022[K[23;49H(gdb) p /x $sstatus & SST[K[24;49HSSTATUS_SIE   SSTATUS_SPIE  SSTATUS_SPP   SSTATUS_UIE   SSTATUS_UPIE[K[25;49H(gdb) p /x $sstatus & SSTATUS_SP[K[26;49HSSTATUS_SPIE  SSTATUS_SPP[K[27;49H(gdb) p /x $sstatus & SSTATUS_SP[K[?12l[?25hP [?25l[36m[1m[7m[1;49H┌─kernel/syscall.c─────────────────────────────────────────────────────────────┐[2;49H│(B[m   [2m   127 (B[m[31m[[39mSYS_mkdir[31m][39m   sys_mkdir[31m,[39m[44X[36m[1m[7m[44C│[3;49H│(B[m   [2m   128 (B[m[31m[[39mSYS_close[31m][39m   sys_close[31m,[39m[44X[36m[1m[7m[44C│[4;49H│(B[m   [2m   129 (B[m[31m};[39m[66X[36m[1m[7m[66C│[5;49H│(B[m   [2m   130 (B[m[68X[36m[1m[7m[68C│[6;49H│(B[m   [2m   131 (B[m[32mvoid[39m[64X[36m[1m[7m[64C│[7;49H│(B[m   [2m   132 (B[m[1msyscall(B[m[31m([32mvoid[31m)[39m[55X[36m[1m[7m[55C│[8;49H│(B[mB+ [2m   133 (B[m[31m{[39m[67X[36m[1m[7m[67C│[9;49H│(B[m   [2m   134 (B[m  [32mint[39m num[31m;[39m[58X[36m[1m[7m[58C│[10;49H│(B[m   [2m   135 (B[m  [34m[1mstruct(B[m [32mproc[39m [31m*[39mp [31m=[39m [1mmyproc(B[m[31m();[39m[40X[36m[1m[7m[40C│[11;49H│(B[m   [2m   136 (B[m[68X[36m[1m[7m[68C│[12;49H│(B[m  >[2m   137 (B[m[7m  num = p->trapframe->a7;(B[m[43X[36m[1m[7m[43C│[13;49H│(B[m   [2m   138 (B[m  [34m[1mif(B[m[31m([39mnum [31m>[39m [35m0[39m [31m&&[39m num [31m<[39m [1mNELEM(B[m[31m([39msyscalls[31m)[39m [31m&&[39m syscalls[31m[[39mnum[31m])[39m [31m{[39m[11X[36m[1m[7m[11C│[14;49H│(B[m   [2m   139 (B[m    [36m// Use num to lookup the system call function for num, call it,[39m [36m[1m[7m│[15;49H│(B[m   [2m   140 (B[m    [36m// and store its return value in p->trapframe->a0[39m[15X[36m[1m[7m[15C│[16;49H│(B[m   [2m   141 (B[m    p[31m->[39mtrapframe[31m->[39ma0 [31m=[39m syscalls[31m[[39mnum[31m]();[39m[29X[36m[1m[7m[29C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘(B[m[7m[18;49Hremote Thread 1.1 (src) In: syscall                        L137  PC: 0x800020d8 (B[m[19;49H(gdb) p /x $sstatus[K[36m[20;49H$4[39m = 0x200000022[K[21;49H(gdb) p /x $sstatus & SST[K[22;49HSSTATUS_SIE   SSTATUS_SPIE  SSTATUS_SPP   SSTATUS_UIE   SSTATUS_UPIE[K[23;49H(gdb) p /x $sstatus & SSTATUS_SP[K[24;49HSSTATUS_SPIE  SSTATUS_SPP[K[25;49H(gdb) p /x $sstatus & SSTATUS_SPP [K[36m[26;49H$5[39m = 0x0[K[27;49H(gdb) [K[?12l[?25hexit[?25l[1;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[2;49H23/.gdbinit(B[m[K[3;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[4;49HTo completely disable this security protection add[K[5;49H        [1mset auto-load safe-path /(B[m[K[6;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[7;49HFor more information about this security protection see the[K[8;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[9;49H        info "(gdb)Auto-loading safe path"[K[10;49HThe target architecture is set to "riscv:rv64".[K[11;49Hwarning: No executable has been specified and target does not support[K[12;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[13;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[14;49H0x0000000000001000[39m in [33m??[39m ()[K[15;49H(ins)(gdb) b syscall[K[16;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[17;49H(ins)(gdb) c[K[18;49HContinuing.[K[19;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[2m[21;49H133(B[m     [31m{[39m[K[22;49H(ins)(gdb) bt[K[23;49H#0  [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[24;49H#1  [34m0x0000000080001dfc[39m in [33musertrap[39m () at [32mkernel/trap.c[39m:[2m67(B[m[K[25;49H#2  [34m0x0505050505050505[39m in [33m??[39m ()[K[26;49H(ins)(gdb) layout src[K[27;49H[K[?12l[?25h[?25l[1m[1d23/.gdbinit(B[m[K[2;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[3;49HTo completely disable this security protection add[K[4;49H        [1mset auto-load safe-path /(B[m[K[5;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[6;49HFor more information about this security protection see the[K[7;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[8;49H        info "(gdb)Auto-loading safe path"[K[9;49HThe target architecture is set to "riscv:rv64".[K[10;49Hwarning: No executable has been specified and target does not support[K[11;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[12;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[13;49H0x0000000000001000[39m in [33m??[39m ()[K[14;49H(ins)(gdb) b syscall[K[15;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[16;49H(ins)(gdb) c[K[17;49HContinuing.[K[18;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[2m[20;49H133(B[m     [31m{[39m[K[21;49H(ins)(gdb) bt[K[22;49H#0  [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[23;49H#1  [34m0x0000000080001dfc[39m in [33musertrap[39m () at [32mkernel/trap.c[39m:[2m67(B[m[K[24;49H#2  [34m0x0505050505050505[39m in [33m??[39m ()[K[25;49H(ins)(gdb) layout src[K[26;49HDetaching from pid process 1[K[27;49H[K[?12l[?25h[?25l[1dTo completely disable this security protection add[K[2;49H        [1mset auto-load safe-path /(B[m[K[3;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[4;49HFor more information about this security protection see the[K[5;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[6;49H        info "(gdb)Auto-loading safe path"[K[7;49HThe target architecture is set to "riscv:rv64".[K[8;49Hwarning: No executable has been specified and target does not support[K[9;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[10;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[11;49H0x0000000000001000[39m in [33m??[39m ()[K[12;49H(ins)(gdb) b syscall[K[13;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[14;49H(ins)(gdb) c[K[15;49HContinuing.[K[16;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[2m[18;49H133(B[m     [31m{[39m[K[19;49H(ins)(gdb) bt[K[20;49H#0  [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[21;49H#1  [34m0x0000000080001dfc[39m in [33musertrap[39m () at [32mkernel/trap.c[39m:[2m67(B[m[K[22;49H#2  [34m0x0505050505050505[39m in [33m??[39m ()[K[23;49H(ins)(gdb) layout src[K[24;49HDetaching from pid process 1[K[25;49HEnding remote debugging.[K[26;49H[Inferior 1 (process 1) detached][K[27;49H[K[?12l[?25h[?25l[1;48H│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[32m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[?12l[?25h(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [15;1Hi[27;87H[15;2Hnit:[27;87H[15;6H [27;87H[15;7Hs[27;87H[15;8Ht[27;87H[15;9Ha[27;87H[15;10Hr[27;87H[15;11Ht[27;87H[15;12Hi[27;87H[15;13Hn[27;87H[15;14Hg[27;87H[15;15H [27;87H[15;16Hs[27;87H[15;17Hh[27;87H[16;1H$[27;87H[16;2H [27;87H[?25l[1;48H│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[32m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:51 21-Dec-25(B[m[?12l[?25h[27;87H[?25l[1;48H[32m│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[39m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[?12l[?25h[16;3H[?25l[1;48H[32m│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[39m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[30m[42m
+[0] 0:make*                                                                              "PhuHoang@Kanumi:~/Pro" 15:51 21-Dec-25(B[m[?12l[?25h[16;3HQEMU: Terminated
+[?25l[1;48H[32m│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[39m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[?12l[?25h[17;1H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [?25l[1;48H[32m│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[39m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:51 21-Dec-25(B[m[?12l[?25h[17;39H[?25l[H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[30m[42m
+[0] 0:bash- 1:bash*                                                                                     "Kanumi" 15:51 21-Dec-25(B[m[?12l[?25h[1;1H[?25l[30m[42m[28d[0] 0:bash- 1:tmux*                                                                                     "Kanumi" 15:51 21-Dec-25(B[m[?12l[?25h[1;1H[?25l[30m[42m[28d[0] 0:bash- 1:tmux*                                                                      "PhuHoang@Kanumi:~/Pro" 15:51 21-Dec-25(B[m[?12l[?25h[1;1H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [?25l[30m[42m[28;1H[0] 0:bash- 1:bash*                                                                      "PhuHoang@Kanumi:~/Pro" 15:51 21-Dec-25(B[m[?12l[?25h[1;39Hvim kernel/sy
+syscall.c  syscall.d  syscall.h  sysfile.c  sysfile.d  sysinfo.h  sysproc.c  sysproc.d  
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ vim kernel/sysc
+syscall.c  syscall.d  syscall.h  
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ vim kernel/syscall.c 
+[?25l[H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?12l[?25h[6d[1;27r[1;1H[2;27r[26S[1;1H[K[27d"kernel/syscall.c"[1;28r[27;19H[?25l 147L, 3469B[?12l[?25h[2;1H▽  
+           [H[38;5;108m[48;5;235m#include [38;5;142m"types.h"[38;5;223m                                                                                                              [2;1H[38;5;108m#include [38;5;142m"param.h"[38;5;223m                                                                                                              [3;1H[38;5;108m#include [38;5;142m"memlayout.h"[38;5;223m                                                                                                          [4;1H[38;5;108m#include [38;5;142m"riscv.h"[38;5;223m                                                                                                              [5;1H[38;5;108m#include [38;5;142m"spinlock.h"[38;5;223m                                                                                                           [6;1H[38;5;108m#include [38;5;142m"proc.h"[38;5;223m                                                                                                               [7;1H[38;5;108m#include [38;5;142m"syscall.h"[38;5;223m                                                                                                            [8;1H[38;5;108m#include [38;5;142m"defs.h"[38;5;223m                                                                                                               [9;1H                                                                                                                                [10;1H[38;5;245m// Fetch the uint64 at addr from the current process.[38;5;223m                                                                           [?25l(B[m[11;1H[38;5;214m[48;5;235mint[38;5;223m                                                                                                                             [12;1Hfetchaddr(uint64 addr, uint64 *ip)                                                                                              [13;1H{                                                                                                                               [14;1H  [38;5;208mstruct[38;5;223m proc *p = myproc();                                                                                                    [15;1H  [38;5;167mif[38;5;223m(addr >= p->sz || addr+[38;5;175msizeof[38;5;223m(uint64) > p->sz) [38;5;245m// both tests needed, in case of overflow[38;5;223m                                    [16;1H    [38;5;167mreturn[38;5;223m -[38;5;175m1[38;5;223m;                                                                                                                  [17;1H  [38;5;167mif[38;5;223m(copyin(p->pagetable, ([38;5;214mchar[38;5;223m *)ip, addr, [38;5;175msizeof[38;5;223m(*ip)) != [38;5;175m0[38;5;223m)                                                                  [18;1H    [38;5;167mreturn[38;5;223m -[38;5;175m1[38;5;223m;                                                                                                                  [19;1H  [38;5;167mreturn[38;5;223m [38;5;175m0[38;5;223m;                                                                                                                     [20;1H}                                                                                                                               [21;1H                                                                                                                                (B[m[22;1H[38;5;245m[48;5;235m// Fetch the nul-terminated string at addr from the current process.[38;5;223m                                                            [23;1H[38;5;245m// Returns length of string, not including nul, or -[38;5;175m1[38;5;245m for error.[38;5;223m                                                                [24;1H[38;5;214mint[38;5;223m                                                                                                                             [25;1Hfetchstr(uint64 addr, [38;5;214mchar[38;5;223m *buf, [38;5;214mint[38;5;223m max)                                                                                       [26;1H{                                                                                                                               [27;1H                                                                                                              1,1           Top [1;1H[?12l[?25h(B[m[38;5;223m[48;5;237m  [38;5;108m[48;5;235m#include [38;5;142m"types.h"
+[38;5;223m[48;5;237m  [38;5;108m[48;5;235m#include [38;5;142m"param.h"
+[38;5;223m[48;5;237m  [38;5;108m[48;5;235m#include [38;5;142m"memlayout.h"
+[38;5;223m[48;5;237m  [38;5;108m[48;5;235m#include [38;5;142m"riscv.h"
+[38;5;223m[48;5;237m  [38;5;108m[48;5;235m#include [38;5;142m"spinlock.h"
+[38;5;223m[48;5;237m  [38;5;108m[48;5;235m#include [38;5;142m"proc.h"
+[38;5;223m[48;5;237m  [38;5;108m[48;5;235m#include [38;5;142m"syscall.h"
+[38;5;223m[48;5;237m  [38;5;108m[48;5;235m#include [38;5;142m"defs.h"
+[38;5;223m[48;5;237m  
+  [38;5;245m[48;5;235m// Fetch the uint64 at addr from the current process.
+[38;5;223m[48;5;237m  [38;5;214m[48;5;235mint
+[38;5;223m[48;5;237m  [48;5;235mfetchaddr(uint64 addr, uint64 *ip)
+[48;5;237m  [48;5;235m{
+[48;5;237m  [48;5;235m  [38;5;208mstruct[38;5;223m proc *p = myproc();
+[48;5;237m  [48;5;235m  [38;5;167mif[38;5;223m(addr >= p->sz || addr+[38;5;175msizeof[38;5;223m(uint64) > p->sz) [38;5;245m// both tests needed, in case of overflow
+[38;5;223m[48;5;237m  [48;5;235m    [38;5;167mreturn[38;5;223m -[38;5;175m1[38;5;223m;
+[48;5;237m  [48;5;235m  [38;5;167mif[38;5;223m(copyin(p->pagetable, ([?25l(B[m[38;5;214m[48;5;235mchar[38;5;223m *)ip, addr, [38;5;175msizeof[38;5;223m(*ip)) != [38;5;175m0[38;5;223m)
+[48;5;237m  [48;5;235m    [38;5;167mreturn[38;5;223m -[38;5;175m1[38;5;223m;
+[48;5;237m  [48;5;235m  [38;5;167mreturn[38;5;223m [38;5;175m0[38;5;223m;
+[48;5;237m  [48;5;235m}
+[48;5;237m  
+  [38;5;245m[48;5;235m// Fetch the nul-terminated string at addr from the current process.
+[38;5;223m[48;5;237m  [38;5;245m[48;5;235m// Returns length of string, not including nul, or -[38;5;175m1[38;5;245m for error.
+[38;5;223m[48;5;237m  [38;5;214m[48;5;235mint
+[38;5;223m[48;5;237m  [48;5;235mfetchstr(uint64 addr, [38;5;214mchar[38;5;223m *buf, [38;5;214mint[38;5;223m max)
+[48;5;237m  [48;5;235m{[1;3H[?12l[?25h(B[m[?25l[30m[42m[28;1H[0] 0:bash- 1:vim*                                                                       "PhuHoang@Kanumi:~/Pro" 15:51 21-Dec-25(B[m[?12l[?25h[1;3H[27;101H[38;5;223m[48;5;235mG[1;3H[?25l(B[m[H[38;5;214m[48;5;235m[7mW>(B[m[38;5;223m[48;5;235m[SYS_open]    sys_open,
+[38;5;214m[7mW>(B[m[38;5;223m[48;5;235m[SYS_write]   sys_write,
+[38;5;214m[7mW>(B[m[38;5;223m[48;5;235m[SYS_mknod]   sys_mknod,
+[38;5;214m[7mW>(B[m[38;5;223m[48;5;235m[SYS_unlink]  sys_unlink,
+[38;5;214m[7mW>(B[m[38;5;223m[48;5;235m[SYS_link]    sys_link,
+[38;5;214m[7mW>(B[m[38;5;223m[48;5;235m[SYS_mkdir]   sys_mkdir,
+[38;5;214m[7mW>(B[m[38;5;223m[48;5;235m[SYS_close]   sys_close,[8;3H};               [10;3H[38;5;214mvoid[38;5;223m                                                 [11;3Hsyscall([38;5;214mvoid[38;5;223m)[12;3H[48;5;241m[1m{(B[m[38;5;223m[48;5;235m                                 [13;3H  [38;5;214mint[38;5;223m num;[15;5H                                                                                          [16;5Hnum = p->trapframe->a7;[17;8Hnum > [38;5;175m0[38;5;223m && num < NELEM(syscalls) && syscalls[num]) {     [18;7H[38;5;245m// Use num to lookup the system call function for num, call it,[19;5H[38;5;223m  [38;5;245m// and store its return value in p->trapframe->a0[20;3H[38;5;223m    p->trapframe->a0 = syscalls[num]();[21;5H} [38;5;167melse[38;5;223m {[22;3H    printf([38;5;142m"[38;5;208m%d[38;5;142m [38;5;208m%s[38;5;142m: unknown sys call [38;5;208m%d\n[38;5;142m"[27;101H[38;5;223m [22;44H(B[m[38;5;223m[48;5;235m,                          [23;3H            p->pid, p->name, num);                              [24;3H    p->trapframe->a0 = -[38;5;175m1[38;5;223m;[25;3H  }                                      [26;3H[48;5;241m[1m}[27;112H(B[m[38;5;223m[48;5;235m47,1[9CBot[26;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[26;3H[?25l(B[m[12d[38;5;223m[48;5;235m{[26;3H}[27;101H [11C6[25;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[25;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [11C5[24;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[24;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [11C4[23;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[23;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [11C3[22;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[22;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [11C2[21;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[21;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [11C1[20;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[20;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [11C0[19;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[19;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [10C39[18;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[18;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [11C8[17;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[17;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [11C7[16;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mk[16;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [11C6,0-1[15;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mj[15;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [11C7,1  [16;3H[?12l[?25h(B[m[?25l[30m[42m[28;1H[0] 0:bash- 1:vim*                                                                       "PhuHoang@Kanumi:~/Pro" 15:52 21-Dec-25(B[m[?12l[?25h[16;3H[27;101H[38;5;223m[48;5;235ml[16;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [13C2[16;4H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[16;4H[?25l(B[m[27;101H[38;5;223m[48;5;235m [13C3[16;5H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mi[16;5H[?25l(B[m[27;1H[38;5;214m[48;5;235m[1m-- INSERT --[88C(B[m[38;5;223m[48;5;235m [9C137,3[9CBot[16;5H[?12l[?25h(B[m[38;5;223m[48;5;235m/num = p->trapframe->a7;[27;115H4[16;6H(B[m[38;5;245m[48;5;235m//num = p->trapframe->a7;[27;115H[38;5;223m5[16;7H(B[m[38;5;245m[48;5;235m num = p->trapframe->a7;[27;115H[38;5;223m6[16;8H(B[m[27;4H[38;5;214m[48;5;235m[1m(insert) --[96C(B[m[38;5;223m[48;5;235m137,6[9CBot[16;8H(B[m[27;101H[38;5;223m[48;5;235mo[16;8H[?25l(B[m[27;4H[38;5;214m[48;5;235m[1mINSERT --(B[m[38;5;223m[48;5;235m  [86C [9C138,6[9C99%[39m[17;26r[17;1H[1L[17;1H[38;5;223m[48;5;237m  [48;5;235m  [38;5;245m// [38;5;223m                                                                                                                         [27;111H138,6[9C99%[1;28r[17;8H[?12l[?25h(B[m[38;5;223m[48;5;235m [27;115H5[17;7H(B[m[38;5;223m[48;5;235m/ [27;115H4[17;6H(B[m[38;5;223m[48;5;235m [27;115H3[17;5H(B[m[38;5;223m[48;5;235mn[27;115H4[17;6H(B[m[1;4H[38;5;223m[48;5;239m  num                                                                                           v int            [48;5;243m [2;4H[48;5;239m  NBUF                                                                                          d                [48;5;243m [3;4H[48;5;239m  NCPU                                                                                          d                [48;5;243m [4;4H[48;5;239m  NDEV                                                                                          d                [48;5;243m [5;4H[48;5;239m  NELEM(x)                                                                                      f                [48;5;243m [6;4H[48;5;239m  NFILE                                                                                         d                 [7;4H  NINODE                                                                                        d                 [8;4H  NOFILE                                                                                        d                 [9;4H  NPROC                                                                                         d                 [10;4H [27;111H[48;5;235m138,4[9C99%[10;5H[?25l(B[m[38;5;223m[48;5;239m•NSIG                                                                                          d                 [11;4H  namecmp(const char *, const char *)                                                           f int             [12;4H  namei(char *)                                                                                 f struct inode *  [13;4H  nameiparent(char *, char *)                                                                   f struct inode *  [14;4H •NAME_MAX                                                                                      d                 [15;4H •NFDBITS                                                                                       d                 [16;4H •NGREG                                                                                         d                 [17;6H[?12l[?25h(B[m[1;4H[38;5;223m[48;5;235mSYS_open]    sys_open,                                                                                            [2;4HSYS_write]   sys_write,                                                                                           [3;4HSYS_mknod]   sys_mknod,                                                                                           [4;4HSYS_unlink]  sys_unlink,                                                                                          [5;4HSYS_link]    sys_link,                                                                                            [6;4HSYS_mkdir]   sys_mkdir,                                                                                           [7;4HSYS_close]   sys_close,                                                                                           [8;4H;                                                                                                                 [9;4H                                                                                                                  [10;4H[38;5;214moid[38;5;223m                                                                                                               [11;4Hyscall([38;5;214mvoid[38;5;223m)                                                                                                      [12;4H                                                                                                                  [13;4H [38;5;214mint[38;5;223m num;                                                                                                         [17;6H [13;118H[?25l(B[m[14;4H[38;5;223m[48;5;235m [38;5;208mstruct[38;5;223m proc *p = myproc();                                                                                       [15;4H                                                                                                                  [16;4H [38;5;245m// num = p->trapframe->a7;[38;5;223m                                                                                       [17;6Hu[18;4H[48;5;239m  num v int     [27;111H[48;5;235m138,3[9C99%[17;7H[?12l[?25h(B[m[27;111H[38;5;223m[48;5;235m138,5[9C99%[17;7H(B[m[38;5;223m[48;5;235mm[27;111H138,3[9C99%[17;8H(B[m[27;111H[38;5;223m[48;5;235m138,6[9C99%[17;8H(B[m[18;4H[38;5;223m[48;5;235m [38;5;167mif[38;5;223m(num > [38;5;175m0[38;5;223m && n[27;1H[38;5;214m[1m-- INSERT --[98C(B[m[38;5;223m[48;5;235m138,7[9C99%[17;9H(B[m[38;5;223m[48;5;235m=[27;115H8[17;10H(B[m[27;115H[38;5;223m[48;5;235m9[17;11H(B[m[38;5;223m[48;5;235mp[27;115H10[17;12H(B[m[1;10H[38;5;223m[48;5;239m  p                                                                                                                   [48;5;243m [2;10H[48;5;239m  PA2PTE(pa)                                                                                                          [48;5;243m [3;10H[48;5;239m  PGROUNDDOWN(a)                                                                                                       [4;10H  PGROUNDUP(sz)                                                                                                        [5;10H  PGSHIFT                                                                                                              [6;10H  PGSIZE                                                                                                               [7;10H  PHYSTOP                                                                                                              [8;10H  PLIC                                                                                                                 [9;10H  PLIC_PENDING                                                                                                         [27;111H[48;5;235m138,10[8C99%[9d[?25l(B[m[10;10H[38;5;223m[48;5;239m  PLIC_PRIORITY                                                                                                        [11;10H  PLIC_SCLAIM(hart)                                                                                                    [12;10H  PLIC_SENABLE(hart)                                                                                                   [13;10H  PLIC_SPRIORITY(hart)                                                                                                 [14;10H  PTE2PA(pte)                                                                                                          [15;10H  PTE_FLAGS(pte)                                                                                                       [16;10H  PTE_R                                                                                                                [17;12H[?12l[?25h(B[m[1;10H[38;5;223m[48;5;235men]    sys_open,                                                                                                       [2;10Hite]   sys_write,                                                                                                      [3;10Hnod]   sys_mknod,                                                                                                      [4;10Hlink]  sys_unlink,                                                                                                     [5;10Hnk]    sys_link,                                                                                                       [6;10Hdir]   sys_mkdir,                                                                                                      [7;10Hose]   sys_close,                                                                                                      [8;10H                                                                                                                       [9;10H                                                                                                                       [10;10H                                                                                                                       [11;10H([38;5;214mvoid[38;5;223m)                                                                                                                 [12;10H                                                                                                                       [27;1H            [98C      [8C   [12d[?25l(B[m[13;10H[38;5;223m[48;5;235mum;                                                                                                                    [14;10H[38;5;208mt[38;5;223m proc *p = myproc();                                                                                                  [15;10H                                                                                                                       [16;10H[38;5;245mm = p->trapframe->a7;[38;5;223m                                                                                                  [17;12H-[27;1H[38;5;214m[1m-- INSERT --[98C(B[m[38;5;223m[48;5;235m138,11[8C99%[17;13H[?12l[?25h(B[m[38;5;223m[48;5;235m>[27;116H2[17;14H(B[m[2;13H[38;5;223m[48;5;239m  killed    F int                [3;13H  kstack    F uint64             [4;13H  pid       F int                [5;13H  sz        F uint64             [6;13H  xstate    F int                [7;13H  trapframe F struct trapframe * [8;13H  chan      F void *             [9;13H  context   F struct context     [10;13H  cwd       F struct inode *     [11;13H  lock      F struct spinlock    [12;13H  name      F char[16]           [13;13H  ofile     F struct file *[16]  [14;13H  pagetable F pagetable_t        [15;13H  parent    F struct proc *      [16;13H  state     F enum procstate     [27;111H[48;5;235m138,12[8C99%[17;14H[?25l(B[m[?12l[?25h[2;13H[38;5;223m[48;5;235m]   sys_write,                   [3;13H]   sys_mknod,                   [4;13Hk]  sys_unlink,                  [5;13H    sys_link,                    [6;13H]   sys_mkdir,                   [7;13H]   sys_close,                   [8;13H                                 [9;13H                                 [10;13H                                 [11;13H[38;5;214mid[38;5;223m)                              [12;13H                                 [13;13H                                 [14;13Hroc *p = myproc();               [15;13H                                 [16;13H[38;5;245m p->trapframe->a7;[38;5;223m               [17;13H [27;1H[38;5;214m[1m-- INSERT --[98C(B[m[38;5;223m[48;5;235m138,11[8C99%[17;13H(B[m[38;5;223m[48;5;235m [27;116H0[17;12H(B[m[1;10H[38;5;223m[48;5;239m  p                                                                                                                   [48;5;243m [2;10H[48;5;239m  PA2PTE(pa)                                                                                                          [48;5;243m [3;10H[48;5;239m  PGROUNDDOWN(a)                                                                                                       [4;10H  PGROUNDUP(sz)                                                                                                        [5;10H  PGSHIFT                                                                                                              [6;10H  PGSIZE                                                                                                               [7;10H  PHYSTOP                                                                                                              [8;10H  PLIC                                                                                                                 [9;10H  PLIC_PENDING                                                                                                         [27;111H[48;5;235m138,10[8C99%[9d[?25l(B[m[10;10H[38;5;223m[48;5;239m  PLIC_PRIORITY                                                                                                        [11;10H  PLIC_SCLAIM(hart)                                                                                                    [12;10H  PLIC_SENABLE(hart)                                                                                                   [13;10H  PLIC_SPRIORITY(hart)                                                                                                 [14;10H  PTE2PA(pte)                                                                                                          [15;10H  PTE_FLAGS(pte)                                                                                                       [16;10H  PTE_R                                                                                                                [17;12H[?12l[?25h(B[m[1;10H[38;5;223m[48;5;235men]    sys_open,                                                                                                       [2;10Hite]   sys_write,                                                                                                      [3;10Hnod]   sys_mknod,                                                                                                      [4;10Hlink]  sys_unlink,                                                                                                     [5;10Hnk]    sys_link,                                                                                                       [6;10Hdir]   sys_mkdir,                                                                                                      [7;10Hose]   sys_close,                                                                                                      [8;10H                                                                                                                       [9;10H                                                                                                                       [10;10H                                                                                                                       [11;10H([38;5;214mvoid[38;5;223m)                                                                                                                 [12;10H                                                                                                                       [27;1H            [98C      [8C   [12d[?25l(B[m[13;10H[38;5;223m[48;5;235mum;                                                                                                                    [14;10H[38;5;208mt[38;5;223m proc *p = myproc();                                                                                                  [15;10H                                                                                                                       [16;10H[38;5;245mm = p->trapframe->a7;[38;5;223m                                                                                                  [17;11H [27;1H[38;5;214m[1m-- INSERT --[98C(B[m[38;5;223m[48;5;235m138,9[9C99%[17;11H[?12l[?25h(B[m[38;5;223m[48;5;235m*[27;115H10[17;12H(B[m[38;5;223m[48;5;235m([18;59H[38;5;167m[1m[7m{[22;5H}[6C{[26;5H}[27;116H(B[m[38;5;223m[48;5;235m1[17;13H(B[m[38;5;223m[48;5;235mn[27;116H2[17;14H(B[m[1;12H[38;5;223m[48;5;239m  num                                                                                           v int            [48;5;243m [2;12H[48;5;239m  NBUF                                                                                          d                [48;5;243m [3;12H[48;5;239m  NCPU                                                                                          d                [48;5;243m [4;12H[48;5;239m  NDEV                                                                                          d                [48;5;243m [5;12H[48;5;239m  NELEM(x)                                                                                      f                [48;5;243m [6;12H[48;5;239m  NFILE                                                                                         d                [48;5;243m [7;12H[48;5;239m  NINODE                                                                                        d                 [8;12H  NOFILE                                                                                        d                 [9;12H  NPROC                                                                                         d                 [27;111H[48;5;235m138,12[8C99%[10;12H[?25l(B[m[38;5;223m[48;5;239m •NSIG                                                                                          d                 [11;12H  namecmp(const char *, const char *)                                                           f int             [12;12H  namei(char *)                                                                                 f struct inode *  [13;12H  nameiparent(char *, char *)                                                                   f struct inode *  [14;12H •NAME_MAX                                                                                      d                 [15;12H •NFDBITS                                                                                       d                 [16;12H •NGREG                                                                                         d                 [17;14H[?12l[?25h(B[m[1;12H[38;5;223m[48;5;235m]    sys_open,                                                                                                    [2;12He]   sys_write,                                                                                                   [3;12Hd]   sys_mknod,                                                                                                   [4;12Hnk]  sys_unlink,                                                                                                  [5;12H]    sys_link,                                                                                                    [6;12Hr]   sys_mkdir,                                                                                                   [7;12He]   sys_close,                                                                                                   [8;12H                                                                                                                  [9;12H                                                                                                                  [10;12H                                                                                                                  [11;12H[38;5;214moid[38;5;223m)                                                                                                              [12;12H                                                                                                                  [13;12H;                                                                                                                 [27;1H            [98C      [8C   [13;126H[?25l(B[m[14;12H[38;5;223m[48;5;235mproc *p = myproc();                                                                                               [15;12H                                                                                                                  [16;12H[38;5;245m= p->trapframe->a7;[38;5;223m                                                                                               [17;13H [27;1H[38;5;214m[1m-- INSERT --[98C(B[m[38;5;223m[48;5;235m138,11[8C99%[17;13H[?12l[?25h(B[m[38;5;223m[48;5;235mi[27;116H2[17;14H(B[m[1;12H[38;5;223m[48;5;239m [27;111H[48;5;235m138,12[8C99%[1;13H[48;5;239m•I                                                     d                  [48;5;243m [2;12H[48;5;239m  int                                                   k                  [48;5;243m [3;12H[48;5;239m  inode                                                 s                   [4;12H •INT16_C(c)                                            f                   [5;12H •INT16_MAX                                             d                   [6;12H •INT32_C(c)                                            f                   [7;12H •INT32_MAX                                             d                   [8;12H •INT32_MIN                                             d                   [9;12H •INT64_C(c)                                            f                   [10;12H •INT64_MAX                                             d                   [11;12H •INT64_MIN                                             d                  [?25l(B[m[38;5;223m[48;5;239m [12;12H •INT8_C(c)                                             f                   [13;12H •INT8_MAX                                              d                   [14;12H •INT8_MIN                                              d                   [15;12H •INT_FAST16_MAX                                        d                   [16;12H •INT_FAST16_MIN                                        d                   [17;14H[?12l[?25h(B[m[1;13H[38;5;223m[48;5;239m int[39Ck[8C[48;5;235m                       [2;16H[48;5;239mode[37Cs[8C[48;5;235m                       [3;16H[48;5;239mitlock(struct spinlock *, char *)[7Cf void[3C[48;5;235m                       [4;13H[48;5;239m initlog(int, struct superblock *)[9Cf void[3C[48;5;235m                       [5;13H[48;5;239m initsleeplock(struct sleeplock *, char *) f void[3C[48;5;235m                       [6;13H[48;5;239m intr_get([33Cf int[4C[48;5;235m                       [7;13H[48;5;239m intr_off()[32Cf void[3C[48;5;235m                       [8;13H[48;5;239m intr_on()[33Cf void[3C[48;5;235m                       [9;14H[48;5;239mint_fast16_t[30Ci[8C[48;5;235m                       [10;14H[48;5;239mint_fast32_t[30Ci[8C[48;5;235m                       [11;14H[48;5;239mint_fast64_t[30Ci[8C[48;5;235m                       [12;14H[48;5;239mint_fast8_t[31Ci[8C[48;5;235m                       [13;14H[48;5;239mintmax_t[34Ci[8C[48;5;235m                       [14;14H[48;5;239mintptr_t[34Ci[8C[48;5;235m                       [15;14H[48;5;239mino_t         [28Ci[8C[48;5;235m                       [16;14H[48;5;239mindex(const char *, int)[18Cf char *[C[48;5;235m                       [17;14Hn[27;111H138,11[8C99%[17;15H(B[m[27;111H[38;5;223m[48;5;235m138,13[8C99%[17;15H(B[m[1;12H[38;5;223m[48;5;235m]    sys_open,                                       [2;12He]   sys_write,                                      [3;12Hd]   sys_mknod,                                      [4;12Hnk]  sys_unlink,                                     [5;12H]    sys_link,                                       [6;12Hr]   sys_mkdir,                                      [7;17H[48;5;239m          k[6C[48;5;235m                               [8;19H[48;5;239mget()   f int[2C[48;5;235m                               [9;13H[48;5;239m intr_off()   f void[C[48;5;235m                               [10;13H[48;5;239m intr_on()    f void[C[48;5;235m                               [11;22H[48;5;239m16_t i[6C[48;5;235m                               [12;22H[48;5;239m32_t i[6C[48;5;235m                               [13;17H[48;5;239m_fast64_t i[6C[48;5;235m                               [14;17H[48;5;239m_fast8_t  i[6C[48;5;235m                               [15;16H[48;5;239mtmax_t     i[6C[48;5;235m                               [16;16H[48;5;239mtptr_t     i     [C[48;5;235m                               [17;13H[38;5;214mint[27;111H[38;5;223m138,11[8C99%[17;16H(B[m[27;111H[38;5;223m[48;5;235m138,14[8C99%[17;16H(B[m[7;12H[38;5;223m[48;5;235me]   sys_close,       [8;12H                      [9;12H                      [10;12H                      [11;12H[38;5;214moid[38;5;223m)                  [12;12H                      [13;12H;                     [14;12Hproc *p = myproc();   [15;12H                      [16;12H[38;5;245m= p->trapframe->a7;[38;5;223m   [27;1H[38;5;214m[1m-- INSERT --[98C(B[m[38;5;223m[48;5;235m138,15[8C99%[17;17H(B[m[38;5;223m[48;5;235m*[27;116H6[17;18H(B[m[6D[38;5;223m[48;5;241m[1m([5C)[18;59H(B[m[38;5;223m[48;5;235m{[22;5H}[6C{[26;5H}[27;116H7[17;19H(B[m[7D[38;5;223m[48;5;235m([5C)[38;5;175m0[27;116H[38;5;223m8[17;20H(B[m[38;5;223m[48;5;235m;[27;116H9[17;21H(B[m[27;1H[38;5;223m[48;5;235m            [88C^[[8C      [8C   [17;20H[?25l(B[m[27;101H[38;5;223m[48;5;235m  [17;21H(B[m[38;5;214m[48;5;235m[7mW>[8C(B[m[38;5;223m[48;5;235m*[27;111H138,18[8C99%[17;20H[?12l[?25h(B[m[27;1H[38;5;223m[48;5;235m:[99C [9C      [8C   [2G(B[m[38;5;223m[48;5;235mw(B[m[38;5;223m[48;5;235mq(B[m[?25l[38;5;223m[48;5;235m"kernel/syscall.c"(B[m[38;5;223m[48;5;235m 148L, 3491B written(B[m[48;5;235m[1;27r[27;1H
+[K[1;28r[6;1H[?12l[?25h(B[m[?25l[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ vim kernel/sy[K
+syscall.c  syscall.d  syscall.h  sysfile.c  sysfile.d  sysinfo.h  sysproc.c  sysproc.d  [K
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ vim kernel/sysc[K
+syscall.c  syscall.d  syscall.h  [K
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ vim kernel/syscall.c [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?12l[?25h[6d[?25l[?12l[?25h(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [?25l[30m[42m[28;1H[0] 0:bash- 1:bash*                                                                      "PhuHoang@Kanumi:~/Pro" 15:52 21-Dec-25(B[m[?12l[?25h[6;39Hmake qemu
+riscv64-linux-gnu-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -DSOL_SYSCALL -DLAB_SYSCALL -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -fno-pie -no-pie  -c -o kernel/syscall.o kernel/syscall.c -g3
+riscv64-linux-gnu-ld -z max-page-size=4096 -T kernel/kernel.ld -o kernel/kernel kernel/entry.o kernel/kalloc.o kernel/string.o kernel/main.o kernel/vm.o kernel/proc.o kernel/swtch.o kernel/trampoline.o kernel/trap.o kernel/syscall.o kernel/sysproc.o kernel/bio.o kernel/fs.o kernel/log.o kernel/sleeplock.o kernel/file.o kernel/pipe.o kernel/exec.o kernel/sysfile.o kernel/kernelvec.o kernel/plic.o kernel/virtio_disk.o kernel/start.o kernel/console.o kernel/printf.o kernel/uart.o kernel/spinlock.o
+riscv64-linux-gnu-ld: warning: kernel/kernel has a LOAD segment with RWX permissions
+riscv64-linux-gnu-objdump -S kernel/kernel > kernel/kernel.asm
+riscv64-linux-gnu-objdump -t kernel/kernel | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > kernel/kernel.sym
+qemu-system-riscv64 -machine virt -bios none -kernel kernel/kernel -m 128M -smp 3 -nographic -global virtio-mmio.force-legacy=false -drive file=fs.img,if=none,format=raw,id=x0 -device virtio-blk-device,drive=x0,bus=virtio-mmio-bus.0
+
+xv6 kernel is booting
+
+hart 2 starting
+hart[?25l[30m[42m[28;1H[0] 0:bash- 1:make*                                                                      "PhuHoang@Kanumi:~/Pro" 15:52 21-Dec-25(B[m[?12l[?25h[23;5H 1 starting
+scause 0x000000000000000d
+sepc=0x00000000800020d6 stval=0x0000000000000000
+panic: kerneltrap
+[1;27r[27;1H
+[AQEMU: Terminated
+[K[1;28r[27;1H[?25l[?12l[?25h[?25l[?12l[?25h(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [?25l[30m[42m
+[0] 0:bash- 1:bash*                                                                      "PhuHoang@Kanumi:~/Pro" 15:52 21-Dec-25(B[m[?12l[?25h[27;39Hvim kernel/ker[1;27r[1;1H[2S[26dkernel       kernel.asm   kernel.ld    kernel.sym   kernelvec.S  [K
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ vim kernel/kernel[K[1;28r[27;56H[?25l[?12l[?25h.asm [1;27r[27;1H
+[K[1;28r[27;1H[?25l[?12l[?25h[?25l[H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?12l[?25h[1;27r[1;1H[2;27r[26S[1;1H[K[27d"kernel/kernel.asm"[1;28r[27;20H[?25l 13316L, 559997B[2;1H▽  
+           [H[38;5;223m[48;5;235m    800020[38;5;167mc4[38;5;223m:   [38;5;109mec06[38;5;223m                    [38;5;109msd[38;5;223m      [38;5;109mra[38;5;223m,[38;5;175m24[38;5;223m([38;5;109msp[38;5;223m)                                                                       [2;1H    800020[38;5;167mc6[38;5;223m:   [38;5;109me822[38;5;223m                    [38;5;109msd[38;5;223m      [38;5;109ms0[38;5;223m,[38;5;175m16[38;5;223m([38;5;109msp[38;5;223m)                                                                       [3;1H    800020[38;5;167mc8[38;5;223m:   [38;5;109me426[38;5;223m                    [38;5;109msd[38;5;223m      [38;5;109ms1[38;5;223m,[38;5;175m8[38;5;223m([38;5;109msp[38;5;223m)                                                                        [4;1H    800020[38;5;167mca[38;5;223m:   [38;5;175m1000[38;5;223m                    [38;5;109maddi[38;5;223m    [38;5;109ms0[38;5;223m,[38;5;109msp[38;5;223m,[38;5;175m32[38;5;223m                                                                        [5;1H  [38;5;109mint[38;5;223m [38;5;109mnum[38;5;245m;[38;5;223m                                                                                                                      [6;1H  [38;5;109mstruct[38;5;223m [38;5;109mproc[38;5;223m *[38;5;109mp[38;5;223m = [38;5;109mmyproc[38;5;223m()[38;5;245m;[38;5;223m                                                                                                (B[m[38;5;223m[48;5;235m    [7;1H    800020[38;5;167mcc[38;5;223m:   [38;5;109mfffff097[38;5;223m                [38;5;109mauipc[38;5;223m   [38;5;109mra[38;5;223m,[38;5;175m0xfffff[38;5;223m                                                                      [8;1H    80002[38;5;175m0d0[38;5;223m:   [38;5;109me56080e7[38;5;223m                [38;5;109mjalr[38;5;223m    -[38;5;175m426[38;5;223m([38;5;109mra[38;5;223m) [38;5;245m# 80000f22 <myproc>[38;5;223m                                                    [9;1H    80002[38;5;175m0d4[38;5;223m:   84[38;5;109maa[38;5;223m                    [38;5;109mmv[38;5;223m      [38;5;109ms1[38;5;223m,[38;5;109ma0[38;5;223m                                                                           [10;1H                                                                                                                                [11;1H  [38;5;245m// num = p->trapframe->a7;[38;5;223m                                                                                                    [12;1H  [38;5;109mnum[38;5;223m = *([38;5;109mint[38;5;223m *)[38;5;175m0[38;5;245m;[38;5;223m                                                                                                              [13;1H    80002[38;5;175m0d6[38;5;223m:   00002683                [38;5;109mlw[38;5;223m      [38;5;109ma3[38;5;223m,[38;5;175m0[38;5;223m([38;5;109mzero[38;5;223m) [38;5;245m# 0 <_entry-0x80000000>[38;5;223m                                              [14;1H  [38;5;109mif(B[m[38;5;223m[48;5;235m([38;5;109mnum[38;5;223m > [38;5;175m0[38;5;223m && [38;5;109mnum[38;5;223m < [38;5;109mNELEM[38;5;223m([38;5;109msyscalls[38;5;223m) && [38;5;109msyscalls[38;5;223m[[38;5;109mnum[38;5;223m]) {                                                                       [15;1H    800020[38;5;167mda[38;5;223m:   [38;5;109mfff6871b[38;5;223m                [38;5;109maddiw[38;5;223m   [38;5;109ma4[38;5;223m,[38;5;109ma3[38;5;223m,-[38;5;175m1[38;5;223m                                                                        [16;1H    800020[38;5;167mde[38;5;223m:   47[38;5;109md1[38;5;223m                    [38;5;109mli[38;5;223m      [38;5;109ma5[38;5;223m,[38;5;175m20[38;5;223m                                                                           [17;1H    80002[38;5;175m0e0[38;5;223m:   0[38;5;175m0e7[38;5;109mef63[38;5;223m                [38;5;109mbltu[38;5;223m    [38;5;109ma5[38;5;223m,[38;5;109ma4[38;5;223m,800020[38;5;109mfe[38;5;223m <[38;5;109msyscall[38;5;223m+[38;5;175m0x3c[38;5;223m>                                                   [18;1H    80002[38;5;175m0e4[38;5;223m:   00369713                [38;5;109mslli[38;5;223m    [38;5;109ma4[38;5;223m,[38;5;109ma3[38;5;223m,[38;5;175m0x3[38;5;223m                                                                       [19;1H    80002[38;5;175m0e8[38;5;223m:   00006797                [38;5;109mauipc(B[m[38;5;223m[48;5;235m   [38;5;109ma5[38;5;223m,[38;5;175m0x6[38;5;223m                                                                          [20;1H    800020[38;5;167mec[38;5;223m:   6[38;5;109md078793[38;5;223m                [38;5;109maddi[38;5;223m    [38;5;109ma5[38;5;223m,[38;5;109ma5[38;5;223m,[38;5;175m1744[38;5;223m [38;5;245m# 800087b8 <syscalls>[38;5;223m                                                [21;1H    80002[38;5;175m0f0[38;5;223m:   97[38;5;109mba[38;5;223m                    [38;5;109madd[38;5;223m     [38;5;109ma5[38;5;223m,[38;5;109ma5[38;5;223m,[38;5;109ma4[38;5;223m                                                                        [22;1H    80002[38;5;175m0f2[38;5;223m:   639[38;5;109mc[38;5;223m                    [38;5;109mld[38;5;223m      [38;5;109ma5[38;5;223m,[38;5;175m0[38;5;223m([38;5;109ma5[38;5;223m)                                                                        [23;1H    80002[38;5;175m0f4[38;5;223m:   [38;5;109mc789[38;5;223m                    [38;5;109mbeqz[38;5;223m    [38;5;109ma5[38;5;223m,800020[38;5;109mfe[38;5;223m <[38;5;109msyscall[38;5;223m+[38;5;175m0x3c[38;5;223m>                                                      [24;1H    [38;5;245m// Use num to lookup the system call function for num, call it,[38;5;223m                                                             [25;1H    [38;5;245m// and store its return value in p->trapframe->a0[38;5;223m                                                                           (B[m[26;1H[38;5;223m[48;5;235m    [38;5;109mp[38;5;223m->[38;5;109mtrapframe[38;5;223m->[38;5;109ma0[38;5;223m = [38;5;109msyscalls[38;5;223m[[38;5;109mnum[38;5;223m]()[38;5;245m;[38;5;223m                                                                                         [27;1H                                                                                                              4559,20-22    34% [13;22H[?12l[?25h(B[m[?25l[30m[42m[28;1H[0] 0:bash- 1:vim*                                                                       "PhuHoang@Kanumi:~/Pro" 15:52 21-Dec-25(B[m[?12l[?25h[13;22H[27;101H[38;5;223m[48;5;235m/[13;22H[?25l(B[m[27;1H[38;5;223m[48;5;235m/[99C [9C                 [2G[?12l[?25h(B[m[38;5;223m[48;5;235m800020d6[?25l(B[m[13;5H[38;5;208m[48;5;235m[7m800020d6[27;111H(B[m[38;5;223m[48;5;235m      [8C   [10G[?12l[?25h(B[m[?25l[38;5;167m[48;5;235m[1msearch hit BOTTOM, continuing at TOP(B[m[13;5H[38;5;223m[48;5;235m80002[38;5;175m0d6[27;111H[38;5;223m4559,5[8C34%[13;5H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mV[13;5H[?25l(B[m[38;5;223m[48;5;241m[7m    (B[m[38;5;223m[48;5;235m8[48;5;241m[7m0002[38;5;175m0d6[38;5;223m:   00002683                [38;5;109mlw[38;5;223m      [38;5;109ma3[38;5;223m,[38;5;175m0[38;5;223m([38;5;109mzero[38;5;223m) [38;5;245m# 0 <_entry-0x80000000>[38;5;223m [27;1H(B[m[38;5;214m[48;5;235m[1m-- VISUAL LINE --(B[m[38;5;223m[48;5;235m                   [64C1[9C4559,5[8C34%[13;5H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235my[13;5H[?25l(B[m[38;5;223m[48;5;235m    80002[38;5;175m0d6[38;5;223m:   00002683                [38;5;109mlw[38;5;223m      [38;5;109ma3[38;5;223m,[38;5;175m0[38;5;223m([38;5;109mzero[38;5;223m) [38;5;245m# 0 <_entry-0x80000000>[38;5;223m [27;1H                 [83C [9C4559,1[8C34%[13;1H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;1H[?25l(B[m[27;101H[38;5;223m[48;5;235m [14C2[13;2H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;2H[?25l(B[m[27;101H[38;5;223m[48;5;235m [14C3[13;3H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;3H[?25l(B[m[27;101H[38;5;223m[48;5;235m [14C4[13;4H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;4H[?25l(B[m[27;101H[38;5;223m[48;5;235m [14C5[13;5H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235mv[13;5H[?25l(B[m[27;1H[38;5;214m[48;5;235m[1m-- VISUAL --[88C(B[m[38;5;223m[48;5;235m1[9C4559,5[8C34%[13;5H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;5H[?25l(B[m[38;5;223m[48;5;241m[7m8[27;101H(B[m[38;5;223m[48;5;235m2[14C6[13;6H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;6H[?25l(B[m[38;5;223m[48;5;241m[7m0[27;101H(B[m[38;5;223m[48;5;235m3[14C7[13;7H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;7H[?25l(B[m[38;5;223m[48;5;241m[7m0[27;101H(B[m[38;5;223m[48;5;235m4[14C8[13;8H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;8H[?25l(B[m[38;5;223m[48;5;241m[7m0[27;101H(B[m[38;5;223m[48;5;235m5[14C9[13;9H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;9H[?25l(B[m[38;5;223m[48;5;241m[7m2[27;101H(B[m[38;5;223m[48;5;235m6[14C10[13;10H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;10H[?25l(B[m[38;5;175m[48;5;241m[7m0[27;101H(B[m[38;5;223m[48;5;235m7[15C1[13;11H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235ml[13;11H[?25l(B[m[38;5;175m[48;5;241m[7md[27;101H(B[m[38;5;223m[48;5;235m8[15C2[13;12H[?12l[?25h(B[m[27;101H[38;5;223m[48;5;235m"[13;12H(B[m[27;102H[38;5;223m[48;5;235m+[13;12H[?25l(B[m[?12l[?25h[27;103H[38;5;223m[48;5;235my[13;12H[?25l(B[m[5G[38;5;223m[48;5;235m80002[38;5;175m0d[27;1H[38;5;223m            [88C   [7C4559,5 [7C34%[13;5H[?12l[?25h(B[m[27;1H[38;5;223m[48;5;235m:[99C [9C      [8C   [2G(B[m[38;5;223m[48;5;235mq(B[m[48;5;235m[K(B[m[?25l[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ vim kernel/syscall.c [K
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ make qemu[K
+riscv64-linux-gnu-gcc -Wall -Werror -O -fno-omit-frame-pointer -ggdb -gdwarf-2 -DSOL_SYSCALL -DLAB_SYSCALL -MD -mcmodel=medany -ffreestanding -fno-common -nostdlib -mno-relax -I. -fno-stack-protector -fno-pie -no-pie  -c -o kernel/syscall.o kernel/syscall.c -g3[K
+riscv64-linux-gnu-ld -z max-page-size=4096 -T kernel/kernel.ld -o kernel/kernel kernel/entry.o kernel/kalloc.o kernel/string.o kernel/main.o kernel/vm.o kernel/proc.o kernel/swtch.o kernel/trampoline.o kernel/trap.o kernel/syscall.o kernel/sysproc.o kernel/bio.o kernel/fs.o kernel/log.o kernel/sleeplock.o kernel/file.o kernel/pipe.o kernel/exec.o kernel/sysfile.o kernel/kernelvec.o kernel/plic.o kernel/virtio_disk.o kernel/start.o kernel/console.o kernel/printf.o kernel/uart.o kernel/spinlock.o[K
+riscv64-linux-gnu-ld: warning: kernel/kernel has a LOAD segment with RWX permissions[K
+riscv64-linux-gnu-objdump -S kernel/kernel > kernel/kernel.asm[K
+riscv64-linux-gnu-objdump -t kernel/kernel | sed '1,/SYMBOL TABLE/d; s/ .* / /; /^$/d' > kernel/kernel.sym[K
+qemu-system-riscv64 -machine virt -bios none -kernel kernel/kernel -m 128M -smp 3 -nographic -global virtio-mmio.force-legacy=false -drive file=fs.img,if=none,format=raw,id=x0 -device virtio-blk-device,drive=x0,bus=virtio-mmio-bus.0[K
+[K
+xv6 kernel is booting[K
+[K
+hart 2 starting[K
+hart 1 starting[K
+scause 0x000000000000000d[K
+sepc=0x00000000800020d6 stval=0x0000000000000000[K
+panic: kerneltrap[K
+QEMU: Terminated[K
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ vim kernel/ker[K
+kernel       kernel.asm   kernel.ld    kernel.sym   kernelvec.S  [K
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ vim kernel/kernel.asm [K
+[K[?12l[?25h[?25l[?12l[?25h(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [?25l[30m[42m
+[0] 0:bash- 1:bash*                                                                      "PhuHoang@Kanumi:~/Pro" 15:52 21-Dec-25(B[m[?12l[?25h[27;39H[?25l]12;rgb:00/80/80[30m[43m
+kill-window bash? (y/n)                                                                                                         (B[m[?12l[?25h[28;25H[?25l[1;48H[32m│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[39m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│]112(B[m[H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ make qemu[2;47H[1K-gdb
+*** Now run 'gdb' in another window.[11X
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[9;47H[1K -gdb tcp::26000[10;47H[1K
+[1Kxv6 kernel is booting[12;47H[1K
+[1Khart 2 starting[14;47H[1Khart 1 starting[15;47H[1Kinit: starting sh[16;47H[1K$ QEMU: Terminated
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [9X[18;47H[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K
+[1K[1;49HTo completely disable this security protection add[K[2;49H        [1mset auto-load safe-path /(B[m[K[3;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[4;49HFor more information about this security protection see the[K[5;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[6;49H        info "(gdb)Auto-loading safe path"[K[7;49HThe target architecture is set to "riscv:rv64".[K[8;49Hwarning: No executable has been specified and target does not support[K[9;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[10;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[11;49H0x0000000000001000[39m in [33m??[39m ()[K[12;49H(ins)(gdb) b syscall[K[13;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[14;49H(ins)(gdb) c[K[15;49HContinuing.[K[16;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[2m[18;49H133(B[m     [31m{[39m[K[19;49H(ins)(gdb) bt[K[20;49H#0  [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[21;49H#1  [34m0x0000000080001dfc[39m in [33musertrap[39m () at [32mkernel/trap.c[39m:[2m67(B[m[K[22;49H#2  [34m0x0505050505050505[39m in [33m??[39m ()[K[23;49H(ins)(gdb) layout src[K[24;49HDetaching from pid process 1[K[25;49HEnding remote debugging.[K[26;49H[Inferior 1 (process 1) detached][K[27;49H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ [K[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:52 21-Dec-25(B[m[?12l[?25h[17;39Hmake qemu
+ -gdb
+*** Now run 'gdb' in another window.
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S
+ -gdb tcp::26000
+[?25l[1;48H[32m│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[39m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[30m[42m
+[0] 0:make*                                                                              "PhuHoang@Kanumi:~/Pro" 15:52 21-Dec-25(B[m[?12l[?25h[26;1H[?25l[1;48H│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[32m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[?12l[?25h[38C[?25l[1;48H│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[32m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:52 21-Dec-25(B[m[?12l[?25h[27;87H[?25l[30m[42m
+[0] 0:bash*                                                                              "PhuHoang@Kanumi:~/Pro" 15:53 21-Dec-25(B[m[?12l[?25h[27;87Hgdb -ex "source .gdbinit"[?25l[1;49H        [1mset auto-load safe-path /(B[m[K[2;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[3;49HFor more information about this security protection see the[K[4;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[5;49H        info "(gdb)Auto-loading safe path"[K[6;49HThe target architecture is set to "riscv:rv64".[K[7;49Hwarning: No executable has been specified and target does not support[K[8;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[9;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[10;49H0x0000000000001000[39m in [33m??[39m ()[K[11;49H(ins)(gdb) b syscall[K[12;49HBreakpoint 1 at [34m0x800020c2[39m: file [32mkernel/syscall.c[39m, line [2m133(B[m.[K[13;49H(ins)(gdb) c[K[14;49HContinuing.[K[15;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[2m[17;49H133(B[m     [31m{[39m[K[18;49H(ins)(gdb) bt[K[19;49H#0  [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m133(B[m[K[20;49H#1  [34m0x0000000080001dfc[39m in [33musertrap[39m () at [32mkernel/trap.c[39m:[2m67(B[m[K[21;49H#2  [34m0x0505050505050505[39m in [33m??[39m ()[K[22;49H(ins)(gdb) layout src[K[23;49HDetaching from pid process 1[K[24;49HEnding remote debugging.[K[25;49H[Inferior 1 (process 1) detached][K[26;49H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ gdb -ex "source .gdbinit"[K[27;49H[K[?12l[?25h[?25l[1d(ins)(gdb) layout src[K[2;49HDetaching from pid process 1[K[3;49HEnding remote debugging.[K[4;49H[Inferior 1 (process 1) detached][K[5;49H(ins)[PhuHoang@Kanumi xv6-labs-2023]$ gdb -ex "source .gdbinit"[K[35m[1m[6;49HGNU gdb (GDB) 16.3(B[m[K[7;49HCopyright (C) 2024 Free Software Foundation, Inc.[K[8;49HLicense GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[39m>[K[9;49HThis is free software: you are free to change and redistribute it.[K[10;49HThere is NO WARRANTY, to the extent permitted by law.[K[11;49HType "[1mshow copying(B[m" and "[1mshow warranty(B[m" for details.[K[12;49HThis GDB was configured as "x86_64-pc-linux-gnu".[K[13;49HType "[1mshow configuration(B[m" for configuration details.[K[14;49HFor bug reporting instructions, please see:[K[32m[15;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[16;49HFind the GDB manual and other documentation resources online at:[K[17;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[18;49H[K
+For help, type "[1mhelp(B[m".[K[20;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[21;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[22;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[23;49Hdir/auto-load".[K[24;49HTo enable execution of this file add[K[25;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[26;49H23/.gdbinit(B[m[K[27;49H[K[?12l[?25h[?25l[1dLicense GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[39m>[K[2;49HThis is free software: you are free to change and redistribute it.[K[3;49HThere is NO WARRANTY, to the extent permitted by law.[K[4;49HType "[1mshow copying(B[m" and "[1mshow warranty(B[m" for details.[K[5;49HThis GDB was configured as "x86_64-pc-linux-gnu".[K[6;49HType "[1mshow configuration(B[m" for configuration details.[K[7;49HFor bug reporting instructions, please see:[K[32m[8;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[9;49HFind the GDB manual and other documentation resources online at:[K[10;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[11;49H[K
+For help, type "[1mhelp(B[m".[K[13;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[14;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[15;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[16;49Hdir/auto-load".[K[17;49HTo enable execution of this file add[K[18;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[19;49H23/.gdbinit(B[m[K[20;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[21;49HTo completely disable this security protection add[K[22;49H        [1mset auto-load safe-path /(B[m[K[23;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[24;49HFor more information about this security protection see the[K[25;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[26;49H        info "(gdb)Auto-loading safe path"[K[27;49H[K[?12l[?25h[?25l[1dThis is free software: you are free to change and redistribute it.[K[2;49HThere is NO WARRANTY, to the extent permitted by law.[K[3;49HType "[1mshow copying(B[m" and "[1mshow warranty(B[m" for details.[K[4;49HThis GDB was configured as "x86_64-pc-linux-gnu".[K[5;49HType "[1mshow configuration(B[m" for configuration details.[K[6;49HFor bug reporting instructions, please see:[K[32m[7;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[8;49HFind the GDB manual and other documentation resources online at:[K[9;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[10;49H[K
+For help, type "[1mhelp(B[m".[K[12;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[13;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[14;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[15;49Hdir/auto-load".[K[16;49HTo enable execution of this file add[K[17;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[18;49H23/.gdbinit(B[m[K[19;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[20;49HTo completely disable this security protection add[K[21;49H        [1mset auto-load safe-path /(B[m[K[22;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[23;49HFor more information about this security protection see the[K[24;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[25;49H        info "(gdb)Auto-loading safe path"[K[26;49HThe target architecture is set to "riscv:rv64".[K[27;49H[K[?12l[?25h[?25l[1dThere is NO WARRANTY, to the extent permitted by law.[K[2;49HType "[1mshow copying(B[m" and "[1mshow warranty(B[m" for details.[K[3;49HThis GDB was configured as "x86_64-pc-linux-gnu".[K[4;49HType "[1mshow configuration(B[m" for configuration details.[K[5;49HFor bug reporting instructions, please see:[K[32m[6;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[7;49HFind the GDB manual and other documentation resources online at:[K[8;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[9;49H[K
+For help, type "[1mhelp(B[m".[K[11;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[12;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[13;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[14;49Hdir/auto-load".[K[15;49HTo enable execution of this file add[K[16;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[17;49H23/.gdbinit(B[m[K[18;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[19;49HTo completely disable this security protection add[K[20;49H        [1mset auto-load safe-path /(B[m[K[21;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[22;49HFor more information about this security protection see the[K[23;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[24;49H        info "(gdb)Auto-loading safe path"[K[25;49HThe target architecture is set to "riscv:rv64".[K[26;49Hwarning: No executable has been specified and target does not support[K[27;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[?12l[?25h[?25l[1;49HType "[1mshow copying(B[m" and "[1mshow warranty(B[m" for details.[K[2;49HThis GDB was configured as "x86_64-pc-linux-gnu".[K[3;49HType "[1mshow configuration(B[m" for configuration details.[K[4;49HFor bug reporting instructions, please see:[K[32m[5;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[6;49HFind the GDB manual and other documentation resources online at:[K[7;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[8;49H[K
+For help, type "[1mhelp(B[m".[K[10;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[11;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[12;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[13;49Hdir/auto-load".[K[14;49HTo enable execution of this file add[K[15;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[16;49H23/.gdbinit(B[m[K[17;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[18;49HTo completely disable this security protection add[K[19;49H        [1mset auto-load safe-path /(B[m[K[20;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[21;49HFor more information about this security protection see the[K[22;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[23;49H        info "(gdb)Auto-loading safe path"[K[24;49HThe target architecture is set to "riscv:rv64".[K[25;49Hwarning: No executable has been specified and target does not support[K[26;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[27;49H[K[?12l[?25h(ins)--Type <RET> for more, q to quit, c to continue without paging--[?25l[1;48H│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[32m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[30m[42m
+[0] 0:gdb*                                                                               "PhuHoang@Kanumi:~/Pro" 15:53 21-Dec-25(B[m[?12l[?25h[27;118Hc[?25l[1;49HType "[1mshow configuration(B[m" for configuration details.[K[2;49HFor bug reporting instructions, please see:[K[32m[3;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[4;49HFind the GDB manual and other documentation resources online at:[K[5;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[6;49H[K
+For help, type "[1mhelp(B[m".[K[8;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[9;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[10;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[11;49Hdir/auto-load".[K[12;49HTo enable execution of this file add[K[13;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[14;49H23/.gdbinit(B[m[K[15;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[16;49HTo completely disable this security protection add[K[17;49H        [1mset auto-load safe-path /(B[m[K[18;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[19;49HFor more information about this security protection see the[K[20;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[21;49H        info "(gdb)Auto-loading safe path"[K[22;49HThe target architecture is set to "riscv:rv64".[K[23;49Hwarning: No executable has been specified and target does not support[K[24;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[25;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[26;49H0x0000000000001000[39m in [33m??[39m ()[K[27;49H[K[?12l[?25h(ins)(gdb) b *0x[7m800020d6(B[m[?25l[1;49HFor bug reporting instructions, please see:[K[32m[2;49H<https://www.gnu.org/software/gdb/bugs/>[39m.[K[3;49HFind the GDB manual and other documentation resources online at:[K[4;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[5;49H[K
+For help, type "[1mhelp(B[m".[K[7;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[8;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[9;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[10;49Hdir/auto-load".[K[11;49HTo enable execution of this file add[K[12;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[13;49H23/.gdbinit(B[m[K[14;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[15;49HTo completely disable this security protection add[K[16;49H        [1mset auto-load safe-path /(B[m[K[17;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[18;49HFor more information about this security protection see the[K[19;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[20;49H        info "(gdb)Auto-loading safe path"[K[21;49HThe target architecture is set to "riscv:rv64".[K[22;49Hwarning: No executable has been specified and target does not support[K[23;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[24;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[25;49H0x0000000000001000[39m in [33m??[39m ()[K[26;49H(ins)(gdb) b *0x800020d6[K[27;49H[K[?12l[?25h[?25l[32m[1d<https://www.gnu.org/software/gdb/bugs/>[39m.[K[2;49HFind the GDB manual and other documentation resources online at:[K[3;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[4;49H[K
+For help, type "[1mhelp(B[m".[K[6;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[7;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[8;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[9;49Hdir/auto-load".[K[10;49HTo enable execution of this file add[K[11;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[12;49H23/.gdbinit(B[m[K[13;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[14;49HTo completely disable this security protection add[K[15;49H        [1mset auto-load safe-path /(B[m[K[16;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[17;49HFor more information about this security protection see the[K[18;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[19;49H        info "(gdb)Auto-loading safe path"[K[20;49HThe target architecture is set to "riscv:rv64".[K[21;49Hwarning: No executable has been specified and target does not support[K[22;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[23;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[24;49H0x0000000000001000[39m in [33m??[39m ()[K[25;49H(ins)(gdb) b *0x800020d6[K[26;49HBreakpoint 1 at [34m0x800020d6[39m: file [32mkernel/syscall.c[39m, line [2m138(B[m.[K[27;49H[K[?12l[?25h(ins)(gdb) layout sr[K[Kasm[?25l[1;49HFind the GDB manual and other documentation resources online at:[K[2;49H    <[32mhttp://www.gnu.org/software/gdb/documentation/[39m>.[K[3;49H[K
+For help, type "[1mhelp(B[m".[K[5;49HType "[1mapropos word(B[m" to search for commands related to "word".[K[6;49Hwarning: File "[32m/home/PhuHoang/Projects/os/project-2/xv6-labs-2023/.gdbinit[39m" auto[7;49H-loading has been declined by your `auto-load safe-path' set to "$debugdir:$data[8;49Hdir/auto-load".[K[9;49HTo enable execution of this file add[K[10;49H        [1madd-auto-load-safe-path /home/PhuHoang/Projects/os/project-2/xv6-labs-20[11;49H23/.gdbinit(B[m[K[12;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[13;49HTo completely disable this security protection add[K[14;49H        [1mset auto-load safe-path /(B[m[K[15;49Hline to your configuration file "[32m/home/PhuHoang/.config/gdb/gdbinit[39m".[K[16;49HFor more information about this security protection see the[K[17;49H"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:[K[18;49H        info "(gdb)Auto-loading safe path"[K[19;49HThe target architecture is set to "riscv:rv64".[K[20;49Hwarning: No executable has been specified and target does not support[K[21;49Hdetermining executable automatically.  Try using the "[1mfile(B[m" command.[K[22;49H(ins)--Type <RET> for more, q to quit, c to continue without paging--c[K[34m[23;49H0x0000000000001000[39m in [33m??[39m ()[K[24;49H(ins)(gdb) b *0x800020d6[K[25;49HBreakpoint 1 at [34m0x800020d6[39m: file [32mkernel/syscall.c[39m, line [2m138(B[m.[K[26;49H(ins)(gdb) layout asm[K[27;49H[K[?12l[?25h[?25l[1d[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[?12l[?25h[1d[1;27r[2;49H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1d[K[1;28r[1;49H[36m┌──────────────────────────────────────────────────────────────────────────────┐[2;49H│[78C│[3;49H(B[m[36m│[78C│[4;49H│[78C│[5;49H│[78C│[6;49H│[78C│[7;49H│[78C│[8;49H│[78C│[9;49H│[27C[39m[ No Source Available ][28C[36m│[10;49H│[78C│[11;49H│[78C│[12;49H│[78C│[13;49H(B[m[36m│[78C│[14;49H│[78C│[15;49H│[78C│[16;49H│[78C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘[18;49H[39m[7mremote Thread 1.1 In:                                          L??   PC: 0x1000 [18;128H(B[m[61D[7m(src) In:[1;49H[36m[1m┌──────────────────────────────────────────────────────────────────────────────┐[2;49H│[78C│[3;49H│[78C│[4;49H│[78C│[5;49H│[78C│[6;49H│[78C│[7;49H│[78C│[8;49H│[78C│[9;49H│[78C│[10;49H│[78C│[11;49H│[78C│[12;49H│[78C│[13;49H│[78C│[14;49H│[78C│[15;49H│[78C│[16;49H│[78C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘[18;128H(B[m[1;27r[2;49H[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[1d[K[36m[1m[7m┌──────────────────────────────────────────────────────────────────────────────┐[2;49H│[78C│[3;49H│[78C│[4;49H│[78C│[5;49H│[78C│[6;49H│[78C│[7;49H│[78C│[8;49H│[78C│[9;49H│[27C(B[m[ No Source Available ][28C[36m[1m[7m│[10;49H│[78C│[11;49H│[78C│[12;49H│[78C│[13;49H│[78C│[14;49H│[78C│[15;49H│[78C│[16;49H│[78C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘[18;49H(B[m[7mremote Thread 1.1 (src) In:                                    L??   PC: 0x1000 [18;1H[1;28r[18;128H(B[m[9;76H[ No Assembly Available ][18;68H[7masm[19;49H(B[m(gdb) c[20;49HContinuing.[21;49H[27;1Hxv[21;49H[27;3H6 kerne[21;49H[27;10Hl is [21;49H[27;15Hboot[21;49H[27;19Hing[21;49H[?25l[1;47H[1K[H-gdb
+*** Now run 'gdb' in another window.[11X
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[8;47H[1K -gdb tcp::26000[9;47H[1K
+[1Kxv6 kernel is booting[11;47H[1K
+[1Khart 2 starting[13;47H[1Khart 1 starting[14;47H[1Kinit: starting sh[15;47H[1K$ QEMU: Terminated
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ make qemu[17;47H[1K-gdb
+*** Now run 'gdb' in another window.[11X
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[24;47H[1K -gdb tcp::26000[25;47H[1K
+[1Kxv6 kernel is booting[27;47H[1K[?12l[?25h[21;49H[?25l[H*** Now run 'gdb' in another window.[11X
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[7;47H[1K -gdb tcp::26000[8;47H[1K
+[1Kxv6 kernel is booting[10;47H[1K
+[1Khart 2 starting[12;47H[1Khart 1 starting[13;47H[1Kinit: starting sh[14;47H[1K$ QEMU: Terminated
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ make qemu[16;47H[1K-gdb
+*** Now run 'gdb' in another window.[11X
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[23;47H[1K -gdb tcp::26000[24;47H[1K
+[1Kxv6 kernel is booting[26;47H[1K
+[1K[?12l[?25h[21;49H[27;1Hhart [21;49H[27;6H2 [21;49H[27;8Hs[21;49H[27;9Ht[21;49H[27;10Harti[21;49H[27;14Hng[21;49H[?25l[Hqemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[6;47H[1K -gdb tcp::26000[7;47H[1K
+[1Kxv6 kernel is booting[9;47H[1K
+[1Khart 2 starting[11;47H[1Khart 1 starting[12;47H[1Kinit: starting sh[13;47H[1K$ QEMU: Terminated
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ make qemu[15;47H[1K-gdb
+*** Now run 'gdb' in another window.[11X
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[22;47H[1K -gdb tcp::26000[23;47H[1K
+[1Kxv6 kernel is booting[25;47H[1K
+[1Khart 2 starting[27;47H[1K[?12l[?25h[21;49H[?25l[Hernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[5;47H[1K -gdb tcp::26000[6;47H[1K
+[1Kxv6 kernel is booting[8;47H[1K
+[1Khart 2 starting[10;47H[1Khart 1 starting[11;47H[1Kinit: starting sh[12;47H[1K$ QEMU: Terminated
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ make qemu[14;47H[1K-gdb
+*** Now run 'gdb' in another window.[11X
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[21;47H[1K -gdb tcp::26000[22;47H[1K
+[1Kxv6 kernel is booting[24;47H[1K
+[1Khart 2 starting[26;47H[1Khart 1 starting[27;47H[1K[?12l[?25h[21;49H
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m138[23;49H(B[m[18;77H[7msyscall[24CL138  PC: 0x800020d6(B[m[2;53H[34m0x800020c4[39m <[33msyscall[39m+2>  [32msd[6C[31mra[39m,[34m24[39m([31msp[39m)[3;53H[34m0x800020c6[39m <[33msyscall[39m+4>  [32msd[6C[31ms0[39m,[34m16[39m([31msp[39m)[4;53H[34m0x800020c8[39m <[33msyscall[39m+6>  [32msd[6C(B[m[31ms1[39m,[34m8[39m([31msp[39m)[5;53H[34m0x800020ca[39m <[33msyscall[39m+8>  [32maddi[39m    [31ms0[39m,[31msp[39m,[34m32[6;53H0x800020cc[39m <[33msyscall[39m+10> [32mauipc[39m   [31mra[39m,[34m0xfffff[7;53H0x800020d0[39m <[33msyscall[39m+14> [32mjalr[39m    [34m-426[39m([31mra[39m)[8;53H[34m0x800020d4[39m <[33msyscall[39m+18> [32mmv[6C[31ms1[39m,[31ma0[9;50H[39mB+>[7m0x800020d6 <syscall+20> lw      a3,0(zero) # 0x0[10;53H(B[m[34m0x800020da[39m <[33msyscall[39m+24> [32maddiw[39m   [31ma4[39m,[31ma3[39m,[34m-1[11;53H0x800020de[39m <[33msyscall[39m+28> [32mli[6C(B[m[31ma5[39m,[34m20[12;53H0x800020e0[39m <[33msyscall[39m+30> [32mbltu[39m    [31ma5[39m,[31ma4[39m,[34m0x800020fe[39m <[33msyscall[39m+60>[13;53H[34m0x800020e4[39m <[33msyscall[39m+34> [32mslli[39m    [31ma4[39m,[31ma3[39m,[34m0x3[14;53H0x800020e8[39m <[33msyscall[39m+38> [32mauipc[39m   [31ma5[39m,[34m0x6[15;53H0x800020ec[39m <[33msyscall[39m+42> [32maddi[39m    [31ma5[39m,[31ma5[39m,[34m1744[16;53H0x800020f0[39m <[33msyscall[39m+46> [32madd[39m     [31ma5[39m,[31ma5[39m,[31ma4[23;49H[39m(gdb) p layout      p p->name [24;49H[36m$1[39m = "initcode\000\000\000\000\000\000\000"[25;49H(gdb) p p->pid [26;49H[36m$2[39m = 1[27;49H(gdb) [?25l[30m[42m
+[0] 0:gdb*                                                                               "PhuHoang@Kanumi:~/Pro" 15:54 21-Dec-25(B[m[?12l[?25h[27;55Hex  [?25l]12;rgb:00/80/80[30m[43m
+:                                                                                                                               (B[m[?12l[?25h[28;2H[?25l[30m[43m:k                                                                                                                              (B[m[?12l[?25h[28;3H[?25l[30m[43m:ki                                                                                                                             (B[m[?12l[?25h[28;4H[?25l[30m[43m:kil                                                                                                                            (B[m[?12l[?25h[28;5H[?25l[30m[43m:kill                                                                                                                           (B[m[?12l[?25h[28;6H[?25l[30m[43m:kill-                                                                                                                          (B[m[?12l[?25h[28;7H[?25l[30m[43m:kill-s                                                                                                                         (B[m[?12l[?25h[28;8H[?25l[30m[43m:kill-se                                                                                                                        (B[m[?12l[?25h[28;9H[?25l[1;48H│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[32m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│]112(B[m[Hernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[5;47H[1K -gdb tcp::26000[6;47H[1K
+[1Kxv6 kernel is booting[8;47H[1K
+[1Khart 2 starting[10;47H[1Khart 1 starting[11;47H[1Kinit: starting sh[12;47H[1K$ QEMU: Terminated
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ make qemu[14;47H[1K-gdb
+*** Now run 'gdb' in another window.[11X
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[21;47H[1K -gdb tcp::26000[22;47H[1K
+[1Kxv6 kernel is booting[24;47H[1K
+[1Khart 2 starting[26;47H[1Khart 1 starting[27;47H[1K[36m[1m[7m[1;49H┌──────────────────────────────────────────────────────────────────────────────┐[2;49H│(B[m[3X[34m[3C0x800020c4[39m <[33msyscall[39m+2>  [32msd[39m[6X[31m[6Cra[39m,[34m24[39m([31msp[39m)[34X[36m[1m[7m[34C│[3;49H│(B[m[3X[34m[3C0x800020c6[39m <[33msyscall[39m+4>  [32msd[39m[6X[31m[6Cs0[39m,[34m16[39m([31msp[39m)[34X[36m[1m[7m[34C│[4;49H│(B[m[3X[34m[3C0x800020c8[39m <[33msyscall[39m+6>  [32msd[39m[6X[31m[6Cs1[39m,[34m8[39m([31msp[39m)[35X[36m[1m[7m[35C│[5;49H│(B[m[3X[34m[3C0x800020ca[39m <[33msyscall[39m+8>  [32maddi[39m    [31ms0[39m,[31msp[39m,[34m32[39m[35X[36m[1m[7m[35C│[6;49H│(B[m[3X[34m[3C0x800020cc[39m <[33msyscall[39m+10> [32mauipc[39m   [31mra[39m,[34m0xfffff[39m[33X[36m[1m[7m[33C│[7;49H│(B[m[3X[34m[3C0x800020d0[39m <[33msyscall[39m+14> [32mjalr[39m    [34m-426[39m([31mra[39m)[35X[36m[1m[7m[35C│[8;49H│(B[m[3X[34m[3C0x800020d4[39m <[33msyscall[39m+18> [32mmv[39m[6X[31m[6Cs1[39m,[31ma0[39m[38X[36m[1m[7m[38C│[9;49H│(B[mB+>[7m0x800020d6 <syscall+20> lw      a3,0(zero) # 0x0(B[m[27X[36m[1m[7m[27C│[10;49H│(B[m[3X[34m[3C0x800020da[39m <[33msyscall[39m+24> [32maddiw[39m   [31ma4[39m,[31ma3[39m,[34m-1[39m[35X[36m[1m[7m[35C│[11;49H│(B[m[3X[34m[3C0x800020de[39m <[33msyscall[39m+28> [32mli[39m[6X[31m[6Ca5[39m,[34m20[39m[38X[36m[1m[7m[38C│[12;49H│(B[m[3X[34m[3C0x800020e0[39m <[33msyscall[39m+30> [32mbltu[39m    [31ma5[39m,[31ma4[39m,[34m0x800020fe[39m <[33msyscall[39m+60>[14X[36m[1m[7m[14C│[13;49H│(B[m[3X[34m[3C0x800020e4[39m <[33msyscall[39m+34> [32mslli[39m    [31ma4[39m,[31ma3[39m,[34m0x3[39m[34X[36m[1m[7m[34C│[14;49H│(B[m[3X[34m[3C0x800020e8[39m <[33msyscall[39m+38> [32mauipc[39m   [31ma5[39m,[34m0x6[39m[37X[36m[1m[7m[37C│[15;49H│(B[m[3X[34m[3C0x800020ec[39m <[33msyscall[39m+42> [32maddi[39m    [31ma5[39m,[31ma5[39m,[34m1744[39m[33X[36m[1m[7m[33C│[16;49H│(B[m[3X[34m[3C0x800020f0[39m <[33msyscall[39m+46> [32madd[39m     [31ma5[39m,[31ma5[39m,[31ma4[39m[35X[36m[1m[7m[35C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘(B[m[7m[18;49Hremote Thread 1.1 (asm) In: syscall                        L138  PC: 0x800020d6 (B[m[19;49H(gdb) c[K[20;49HContinuing.[K[21;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m138(B[m[K[23;49H(gdb) p p->name [K[36m[24;49H$1[39m = "initcode\000\000\000\000\000\000\000"[K[25;49H(gdb) p p->pid [K[36m[26;49H$2[39m = 1[K[27;49H(gdb)   [K]12;rgb:00/80/80[30m[43m
+:kill-se                                                                                                                        ]112[39m[49m[24;1H┌──────────────────┐
+│(B[m[30m[43m kill-server  (0) [39m[49m│
+│(B[m kill-session (1) │
+└──────────────────┘(B[m[?12l[?25h[28;9H[?25l[24;1H┌──────────────────┐
+│(B[m kill-server  (0) │
+│(B[m[30m[43m kill-session (1) [39m[49m│
+└──────────────────┘(B[m[28;9H[1;48H│[2;48H│[3;48H│[4;48H│[5;48H│[6;48H│[7;48H│[8;48H│[9;48H│[10;48H│[11;48H│[12;48H│[13;48H│[14;48H│[15;48H[32m│[16;48H│[17;48H│[18;48H│[19;48H│[20;48H│[21;48H│[22;48H│[23;48H│[24;48H│[25;48H│[26;48H│[27;48H│(B[m[Hernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[5;47H[1K -gdb tcp::26000[6;47H[1K
+[1Kxv6 kernel is booting[8;47H[1K
+[1Khart 2 starting[10;47H[1Khart 1 starting[11;47H[1Kinit: starting sh[12;47H[1K$ QEMU: Terminated
+(ins)[PhuHoang@Kanumi xv6-labs-2023]$ make qemu[14;47H[1K-gdb
+*** Now run 'gdb' in another window.[11X
+qemu-system-riscv64 -machine virt -bios none -k
+ernel kernel/kernel -m 128M -smp 3 -nographic -
+global virtio-mmio.force-legacy=false -drive fi
+le=fs.img,if=none,format=raw,id=x0 -device virt
+io-blk-device,drive=x0,bus=virtio-mmio-bus.0 -S[21;47H[1K -gdb tcp::26000[22;47H[1K
+[1Kxv6 kernel is booting[24;47H[1K
+[1Khart 2 starting[26;47H[1Khart 1 starting[27;47H[1K[36m[1m[7m[1;49H┌──────────────────────────────────────────────────────────────────────────────┐[2;49H│(B[m[3X[34m[3C0x800020c4[39m <[33msyscall[39m+2>  [32msd[39m[6X[31m[6Cra[39m,[34m24[39m([31msp[39m)[34X[36m[1m[7m[34C│[3;49H│(B[m[3X[34m[3C0x800020c6[39m <[33msyscall[39m+4>  [32msd[39m[6X[31m[6Cs0[39m,[34m16[39m([31msp[39m)[34X[36m[1m[7m[34C│[4;49H│(B[m[3X[34m[3C0x800020c8[39m <[33msyscall[39m+6>  [32msd[39m[6X[31m[6Cs1[39m,[34m8[39m([31msp[39m)[35X[36m[1m[7m[35C│[5;49H│(B[m[3X[34m[3C0x800020ca[39m <[33msyscall[39m+8>  [32maddi[39m    [31ms0[39m,[31msp[39m,[34m32[39m[35X[36m[1m[7m[35C│[6;49H│(B[m[3X[34m[3C0x800020cc[39m <[33msyscall[39m+10> [32mauipc[39m   [31mra[39m,[34m0xfffff[39m[33X[36m[1m[7m[33C│[7;49H│(B[m[3X[34m[3C0x800020d0[39m <[33msyscall[39m+14> [32mjalr[39m    [34m-426[39m([31mra[39m)[35X[36m[1m[7m[35C│[8;49H│(B[m[3X[34m[3C0x800020d4[39m <[33msyscall[39m+18> [32mmv[39m[6X[31m[6Cs1[39m,[31ma0[39m[38X[36m[1m[7m[38C│[9;49H│(B[mB+>[7m0x800020d6 <syscall+20> lw      a3,0(zero) # 0x0(B[m[27X[36m[1m[7m[27C│[10;49H│(B[m[3X[34m[3C0x800020da[39m <[33msyscall[39m+24> [32maddiw[39m   [31ma4[39m,[31ma3[39m,[34m-1[39m[35X[36m[1m[7m[35C│[11;49H│(B[m[3X[34m[3C0x800020de[39m <[33msyscall[39m+28> [32mli[39m[6X[31m[6Ca5[39m,[34m20[39m[38X[36m[1m[7m[38C│[12;49H│(B[m[3X[34m[3C0x800020e0[39m <[33msyscall[39m+30> [32mbltu[39m    [31ma5[39m,[31ma4[39m,[34m0x800020fe[39m <[33msyscall[39m+60>[14X[36m[1m[7m[14C│[13;49H│(B[m[3X[34m[3C0x800020e4[39m <[33msyscall[39m+34> [32mslli[39m    [31ma4[39m,[31ma3[39m,[34m0x3[39m[34X[36m[1m[7m[34C│[14;49H│(B[m[3X[34m[3C0x800020e8[39m <[33msyscall[39m+38> [32mauipc[39m   [31ma5[39m,[34m0x6[39m[37X[36m[1m[7m[37C│[15;49H│(B[m[3X[34m[3C0x800020ec[39m <[33msyscall[39m+42> [32maddi[39m    [31ma5[39m,[31ma5[39m,[34m1744[39m[33X[36m[1m[7m[33C│[16;49H│(B[m[3X[34m[3C0x800020f0[39m <[33msyscall[39m+46> [32madd[39m     [31ma5[39m,[31ma5[39m,[31ma4[39m[35X[36m[1m[7m[35C│[17;49H└──────────────────────────────────────────────────────────────────────────────┘(B[m[7m[18;49Hremote Thread 1.1 (asm) In: syscall                        L138  PC: 0x800020d6 (B[m[19;49H(gdb) c[K[20;49HContinuing.[K[21;49H[K
+Thread 1 hit Breakpoint 1, [33msyscall[39m () at [32mkernel/syscall.c[39m:[2m138(B[m[K[23;49H(gdb) p p->name [K[36m[24;49H$1[39m = "initcode\000\000\000\000\000\000\000"[K[25;49H(gdb) p p->pid [K[36m[26;49H$2[39m = 1[K[27;49H(gdb)   [K]12;rgb:00/80/80[30m[43m
+:kill-session                                                                                                                   (B[m[28;14H[?12l[?25h[1;28r(B[m[?1l>[H[2J]112[?12l[?25h[?1000l[?1002l[?1003l[?1006l[?1005l[?2004l[?7727l[?1004l[?1049l[23;0;0t[?2031l[exited]
+]0;PhuHoang@Kanumi:~/Projects/os/project-2/xv6-labs-2023[?2004h(ins)[PhuHoang@Kanumi xv6-labs-2023]$ exit
+[?2004lexit
+
+Script done on 2025-12-21 15:54:16+07:00 [COMMAND_EXIT_CODE="0"]
