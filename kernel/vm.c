@@ -449,3 +449,27 @@ copyinstr(pagetable_t pagetable, char *dst, uint64 srcva, uint64 max)
     return -1;
   }
 }
+
+#ifdef LAB_PGTBL
+void
+rvmprint(pagetable_t pagetable, int level){
+  for(int i = 0; i < 512; i++){
+    pte_t pte = pagetable[i];
+    if((pte) & PTE_V){
+      uint64 pa = PTE2PA(pte);
+      for(int j = 2; j >= level; j--)
+        printf(" ..");
+      printf("%d: pte %p pa %p\n", i, (void *)pte, (void *)pa);
+      if(level > 0 && !PTE_LEAF(pte))
+        rvmprint((pagetable_t)pa, level-1);
+    }
+  }
+}
+
+void
+vmprint(pagetable_t pagetable) {
+  // your code here
+  printf("page table %p\n", pagetable);
+  rvmprint(pagetable, 2);
+}
+#endif
