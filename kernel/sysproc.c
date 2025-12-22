@@ -5,6 +5,7 @@
 #include "memlayout.h"
 #include "spinlock.h"
 #include "proc.h"
+#include "sysinfo.h"
 
 uint64
 sys_exit(void)
@@ -100,5 +101,31 @@ sys_trace(void)
 
 	argint(0, &mask);
   p->tracemask = mask;
+  return 0;
+}
+
+// Return number of processes
+// Used by the sysinfo system call
+uint64
+sys_sysinfo(void)
+{
+  struct sysinfo si;
+  uint64 usi_addr;
+  struct proc *p = myproc();
+
+  argaddr(0, &usi_addr);
+  si.freemem = freemem();
+  si.nproc = nproc();
+
+#ifdef LOAD_AVG
+  extern uint64 avenrun[3];
+  si.loads[0] = avenrun[0];
+  si.loads[1] = avenrun[1];
+  si.loads[2] = avenrun[2];
+#endif
+
+  if (copyout(p->pagetable, usi_addr, (char *)&si, sizeof(si)) < 0)
+    return -1;
+
   return 0;
 }

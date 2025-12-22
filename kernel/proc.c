@@ -5,6 +5,7 @@
 #include "spinlock.h"
 #include "proc.h"
 #include "defs.h"
+#include "sysinfo.h"
 
 struct cpu cpus[NCPU];
 
@@ -690,3 +691,73 @@ procdump(void)
     printf("\n");
   }
 }
+
+uint64
+nproc(void)
+{
+  uint64 cnt = 0;
+  struct proc *p;
+
+  for (p = proc; p < &proc[NPROC]; ++p) {
+    acquire(&p->lock);
+    if (p->state != UNUSED)
+      ++cnt;
+    release(&p->lock);
+  }
+
+  return cnt;
+}
+
+#ifdef LOAD_AVG
+static uint64
+nrunproc(void)
+{
+  uint64 cnt = 0;
+  struct proc *p;
+
+  for (p = proc; p < &proc[NPROC]; ++p) {
+    acquire(&p->lock);
+    if (p->state == RUNNING
+        || p->state == RUNNABLE)
+      ++cnt;
+    release(&p->lock);
+  }
+
+  return cnt;
+}
+
+// Based on linux loadavg.h
+/*
+ * a1 = a0 * e + a * (1 - e)
+ */
+static inline uint64
+calc_load(uint64 load, uint64 exp, uint64 active)
+{
+	uint64 newload;
+	newload = load * exp + active * (FIXED_1 - exp);
+	if (active >= load)
+		newload += FIXED_1-1;
+	return newload / FIXED_1;
+}
+
+uint64 avenrun[3];
+
+/*
+ * calc_load - update the avenrun load
+ * Called from the global timer code.
+ */
+void calc_global_load(void)
+{
+  uint64 active;
+  active = nrunproc();
+
+  active = active > 0 ? active * FIXED_1 : 0;
+  avenrun[0] = calc_load(
+      avenrun[0], EXP_1, active);
+  avenrun[1] = calc_load(
+      avenrun[1], EXP_5, active);
+  avenrun[2] = calc_load(
+      avenrun[2], EXP_15, active);
+}
+
+#endif // LOAD_AVG

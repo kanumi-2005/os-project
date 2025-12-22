@@ -122,6 +122,11 @@ ifdef TRACE_ARG
 CFLAGS += -DTRACE_ARG
 endif
 
+# Enable load avg in sysinfo
+ifdef LOAD_AVG
+CFLAGS += -DLOAD_AVG
+endif
+
 LDFLAGS = -z max-page-size=4096
 
 $K/kernel: $(OBJS) $(OBJS_KCSAN) $K/kernel.ld $U/initcode
@@ -195,7 +200,8 @@ UPROGS=\
 	$U/_zombie\
 	$U/_trace\
 	$U/_tracetest\
-
+	$U/_sysinfotest\
+	$U/_mysysinfotest\
 
 
 ifeq ($(LAB),$(filter $(LAB), lock))

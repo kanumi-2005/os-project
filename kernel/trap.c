@@ -4,6 +4,7 @@
 #include "riscv.h"
 #include "spinlock.h"
 #include "proc.h"
+#include "sysinfo.h"
 #include "defs.h"
 
 struct spinlock tickslock;
@@ -165,6 +166,11 @@ clockintr()
 {
   acquire(&tickslock);
   ticks++;
+#ifdef LOAD_AVG
+  void calc_global_load(void);
+  if (ticks % LOAD_FREQ == 0)
+    calc_global_load();
+#endif
   wakeup(&ticks);
   release(&tickslock);
 }
