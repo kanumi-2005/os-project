@@ -2,19 +2,55 @@
 #include "kernel/sysinfo.h"
 #include "user/user.h"
 
-#define N_CHILD 50
+#define N_CHILD 5
+#define MEMALLOC (4096 * 8)
+#define N_LOAD_CHILD 50
 #define BURN_TIME 30
 
+#ifdef LOAD_AVG
 static void
 print_load(uint64 load)
 {
-#ifdef LOAD_AVG
   printf("%d.%d%d",
          LOAD_INT(load),
          LOAD_FRAC(load) / 10,
          LOAD_FRAC(load) % 10);
-#else
-  printf("N/A");
+}
+
+static void
+print_loads(uint64 *loads)
+{
+  printf("Load avg   : ");
+  print_load(loads[0]);
+  printf(" ");
+  print_load(loads[1]);
+  printf(" ");
+  print_load(loads[2]);
+}
+#endif
+
+static void
+print_freemem(uint64 freemem)
+{
+  printf("Free memory: %d bytes", freemem);
+}
+
+static void
+print_nproc(uint64 nproc)
+{
+  printf("Processes  : %d", nproc);
+}
+
+static void
+print_sysinfo(struct sysinfo *si)
+{
+  print_freemem(si->freemem);
+  printf("\n");
+  print_nproc(si->nproc);
+  printf("\n");
+#ifdef LOAD_AVG
+  print_loads(si->loads);
+  printf("\n");
 #endif
 }
 
@@ -30,23 +66,55 @@ main(void)
     exit(1);
   }
 
-  printf("Free memory: %d bytes\n", si.freemem);
-  printf("Processes  : %d\n", si.nproc);
+  print_sysinfo(&si);
 
-#ifdef LOAD_AVG
-  printf("Load avg   : ");
-  print_load(si.loads[0]);
-  printf(" ");
-  print_load(si.loads[1]);
-  printf(" ");
-  print_load(si.loads[2]);
-  printf("\n");
-#endif
-
-  printf("\nSpawning CPU load (%d processes)...\n", N_CHILD);
+  printf("\nSpawning CPU freemem & nproc (%d processes)...\n", N_CHILD);
 
   // Tạo tiến trình con
   for (int i = 0; i < N_CHILD; i++) {
+    int pid = fork();
+    if (pid == 0) {
+      int *ptr = (int *)malloc(MEMALLOC);
+      int t = 0;
+      while(t < BURN_TIME*10) {
+        for (volatile int j = 0; j < 1000000; j++); // burn CPU
+        t++;
+      }
+      free(ptr);
+      exit(0);
+    } else {
+      printf("After forking %d times: ", i + 1);
+        if (sysinfo(&si) < 0) {
+          printf("sysinfo failed\n");
+          exit(1);
+        }
+        print_freemem(si.freemem);
+	printf(", ");
+        print_nproc(si.nproc);
+	printf("\n");
+    }
+  }
+  for (int i = 0; i < N_CHILD; i++) {
+    wait(0);
+    printf("After waiting %d child processes: ", i + 1);
+    if (sysinfo(&si) < 0) {
+      printf("sysinfo failed\n");
+      exit(1);
+    }
+    print_freemem(si.freemem);
+    printf(", ");
+    print_nproc(si.nproc);
+    printf("\n");
+  }
+
+  printf("All child processes exited. Final sysinfo:\n");
+  if (sysinfo(&si) == 0) {
+    print_sysinfo(&si);
+  }
+
+#ifdef LOAD_AVG
+  printf("\nSpawning CPU loads (%d processes)...\n", N_LOAD_CHILD);
+  for (int i = 0; i < N_LOAD_CHILD; i++) {
     int pid = fork();
     if (pid == 0) {
       int t = 0;
@@ -58,32 +126,26 @@ main(void)
     }
   }
 
-  for (int i = 0; i < N_CHILD / 5 * 2; i++) {
+  for (int i = 0; i < N_LOAD_CHILD / 5 * 2; i++) {
     sleep(50);
     if (sysinfo(&si) < 0) {
       printf("sysinfo failed\n");
       exit(1);
     }
-    printf("After %d sec: load = ", (i+1)*5);
-    print_load(si.loads[0]);
-    printf(" ");
-    print_load(si.loads[1]);
-    printf(" ");
-    print_load(si.loads[2]);
+    printf("After waiting %d sec: ", (i+1)*5);
+    print_loads(si.loads);
     printf("\n");
   }
 
-  // Wait tất cả con
-  for (int i = 0; i < N_CHILD; i++) {
+  for (int i = 0; i < N_LOAD_CHILD; i++) {
     wait(0);
   }
 
-  printf("All child processes exited. Final loadavg:\n");
+  printf("All child processes exited. Final sysinfo:\n");
   if (sysinfo(&si) == 0) {
-    print_load(si.loads[0]); printf(" ");
-    print_load(si.loads[1]); printf(" ");
-    print_load(si.loads[2]); printf("\n");
+    print_sysinfo(&si);
   }
+#endif
 
   exit(0);
 }
