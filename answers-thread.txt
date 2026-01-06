@@ -1,0 +1,11 @@
+Why are there missing keys with 2 threads, but not with 1 thread?
+==Thread A, insert func==
+...
+e->next = n;
+==Thread B, insert func==
+...
+e->next = n;
+*p = e;
+==Thread A, insert func, cont==
+*p = e;
+-> Missing entry in thread B!
